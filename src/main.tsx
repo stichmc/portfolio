@@ -9,7 +9,7 @@ import Footer from "./components/Footer.tsx";
 
 // Pages
 import AboutMe from "./pages/AboutMe.tsx";
-import Contact from "./pages/ContactInfo.tsx";
+import ContactInfo from "./pages/ContactInfo.tsx";
 import Resume from "./pages/Resume.tsx";
 import Synergy from "./pages/projects/Synergy.tsx";
 import WheelWizard from "./pages/projects/WheelWizard.tsx";
@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<Navigate to="/about-me" />} />
         <Route path="/about-me" element={<AboutMe />}/>
         <Route path="/resume" element={<Resume />}/>
-        <Route path="/contact-info" element={<Contact />}/>
+        <Route path="/contact-info" element={<ContactInfo />}/>
 
         <Route path="/projects/synergy" element={<Synergy />} />
         <Route path="/projects/wheel-wizard" element={<WheelWizard />} />
