@@ -1,5 +1,6 @@
-import * as React from "react"
-import { cn } from "@/lib/utils"
+import * as React from "react";
+import { Link } from "react-router-dom";
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -8,8 +9,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
- 
+} from "@/components/ui/navigation-menu";
+
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Wheel Wizard",
@@ -20,39 +21,35 @@ const components: { title: string; href: string; description: string }[] = [
   {
     title: "Speech-to-text translator",
     href: "/projects/speech-to-text",
-    description:
-      "A real-time deep learning-based speech-to-text translator.",
+    description: "A real-time deep learning-based speech-to-text translator.",
   },
   {
     title: "Time Escapement",
     href: "/projects/time-escapement",
-    description:
-      "A 17th-century time escapement clock.",
+    description: "A 17th-century time escapement clock.",
   },
   {
     title: "C++ Console Based Game",
     href: "/projects/doom",
-    description:
-      "A 2D video game entirely in C++, inspired by DOOM.",
+    description: "A 2D video game entirely in C++, inspired by DOOM.",
   },
   {
     title: "Time Escapement",
     href: "/projects/time-escapement",
-    description:
-      "A 17th-century time escapement clock.",
+    description: "A 17th-century time escapement clock.",
   },
-]
- 
+];
+
 export default function Navbar() {
   return (
     <NavigationMenu className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <NavigationMenuList>
         <NavigationMenuItem>
-        {/* <Link href="/docs" legacyBehavior passHref>
+          <Link to="/aboutme">
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            Documentation
+            About Me
           </NavigationMenuLink>
-        </Link> */}
+        </Link>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
@@ -61,18 +58,17 @@ export default function Navbar() {
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
-                  <a
+                  <Link
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/projects/synergy"
+                    to="/projects/synergy"
                   >
-                    <img className="h-14 w-14" src="/synergy_logo.svg"/>
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Synergy
-                    </div>
+                    <img className="h-14 w-14" src="/synergy_logo.svg" />
+                    <div className="mb-2 mt-4 text-lg font-medium">Synergy</div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      A more trustworthy, reliable, and secure platform for collaboration and communication.
+                      A more trustworthy, reliable, and secure platform for
+                      collaboration and communication.
                     </p>
-                  </a>
+                  </Link>
                 </NavigationMenuLink>
               </li>
               {components.map((component) => (
@@ -106,9 +102,9 @@ export default function Navbar() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  )
+  );
 }
- 
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
@@ -131,6 +127,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
