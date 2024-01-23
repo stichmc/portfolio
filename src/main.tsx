@@ -8,6 +8,9 @@ import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
 
 // Pages
+import AboutMe from "./pages/AboutMe.tsx";
+import Contact from "./pages/Contact.tsx";
+import Resume from "./pages/Resume.tsx";
 import Synergy from "./pages/projects/Synergy.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

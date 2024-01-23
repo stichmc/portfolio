@@ -8,9 +8,8 @@ Welcome to my portfolio website repository! This readme will guide you through t
 - [Portfolio Sections](#portfolio-sections)
   - [1. About Me](#1-about-me)
   - [2. Projects](#2-projects)
-  - [3. Skills](#3-skills)
-  - [4. Resume](#4-resume)
-  - [5. Contact](#5-contact)
+  - [3. Resume](#3-resume)
+  - [4. Contact](#4-contact)
 - [Navigation](#navigation)
 - [Technologies Used](#technologies-used)
 - [Contact Information](#contact-information)
@@ -31,13 +30,10 @@ Learn more about who I am, my background, and my passion for what I do.
 ### 2. Projects
 Explore the projects I've worked on. Each project has its dedicated page with details on the problem it solves, technologies used, and outcomes.
 
-### 3. Skills
-Discover the various skills I possess, including programming languages, tools, and methodologies.
+### 3. Resume
+Download my resume to get a comprehensive overview of my professional experience and education. Discover the various skills I possess, including programming languages, tools, and methodologies.
 
-### 4. Resume
-Download my resume to get a comprehensive overview of my professional experience and education.
-
-### 5. Contact
+### 4. Contact
 Find my contact information and reach out if you have any inquiries or opportunities.
 
 ## Navigation
