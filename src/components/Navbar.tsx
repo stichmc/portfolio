@@ -14,7 +14,7 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Wheel Wizard",
-    href: "/projects/wheelwizard",
+    href: "/projects/wheel-wizard",
     description:
       "A used-car website for browsing, posting, and purchasing used cars.",
   },
@@ -33,11 +33,6 @@ const components: { title: string; href: string; description: string }[] = [
     href: "/projects/doom",
     description: "A 2D video game entirely in C++, inspired by DOOM.",
   },
-  {
-    title: "Time Escapement",
-    href: "/projects/time-escapement",
-    description: "A 17th-century time escapement clock.",
-  },
 ];
 
 export default function Navbar() {
@@ -45,7 +40,7 @@ export default function Navbar() {
     <NavigationMenu className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link to="/aboutme">
+          <Link to="/about-me">
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
             About Me
           </NavigationMenuLink>
@@ -71,23 +66,6 @@ export default function Navbar() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
