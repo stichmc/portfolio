@@ -37,6 +37,9 @@ const formSchema = z.object({
   name: z.string().min(2, {
     message: "Your name must be at least 2 characters.",
   }),
+  email: z.string().min(2, {
+    message: "Your name must be at least 2 characters.",
+  }),
 })
 
 const ContactInfo = () => {
@@ -44,6 +47,7 @@ const ContactInfo = () => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
+      email: "",
     },
   })
 
@@ -52,7 +56,7 @@ const ContactInfo = () => {
   }
 
   return (
-    <>
+    <div className="grid grid-cols-3">
       <Card className="w-[160px]">
         <CardHeader>
           <CardTitle><img src="./linkedin.svg" className="h-10 w-10"/>LinkedIn</CardTitle>
@@ -68,6 +72,39 @@ const ContactInfo = () => {
         </a>
         </CardContent>
       </Card>
+
+      <Card className="w-[160px]">
+        <CardHeader>
+          <CardTitle><img src="./github.svg" className="h-10 w-10"/>GitHub</CardTitle>
+        </CardHeader>
+        <CardContent>
+        <a
+        href="https://github.com/stichmc"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
+      >
+        View Profile
+        </a>
+        </CardContent>
+      </Card>
+
+      <Card className="w-[160px]">
+        <CardHeader>
+          <CardTitle><img src="./stack-overflow.svg" className="h-10 w-10"/>Stack Overflow</CardTitle>
+        </CardHeader>
+        <CardContent>
+        <a
+        href="https://github.com/stichmc"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
+      >
+        View Profile
+        </a>
+        </CardContent>
+      </Card>
+
       <Card className="w-[350px]">
         <CardHeader>
           <CardTitle>Direct Message</CardTitle>
@@ -75,7 +112,7 @@ const ContactInfo = () => {
         </CardHeader>
         <CardContent>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
               <FormField
                 control={form.control}
                 name="name"
@@ -89,12 +126,25 @@ const ContactInfo = () => {
                   </FormItem>
                 )}
               />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Email</FormLabel>
+                    <FormControl>
+                      <Input {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <Button type="submit" className="rounded-full">Submit</Button>
             </form>
           </Form>
         </CardContent>
       </Card>
-    </>
+    </div>
   )
 }
 
