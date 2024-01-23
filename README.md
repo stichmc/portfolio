@@ -54,8 +54,13 @@ Feel free to contact me using the provided information in the 'Contact' section.
 
 ## Usage
 
-This portfolio is meant to provide an overview of my skills and projects. If you're considering me for a position or collaboration, please refer to my resume for detailed information on my professional background.
+This portfolio is meant to provide an overview of my skills and projects. If you're considering me for a position or collaboration, please refer to my resume for detailed information on my professional background. 
 
+If you would like to run this website in a dev environment locally with vite follow these steps: <br>
+1. Install Node.js with at least version 20
+2. Navigate to the root directory and run: `npm i`
+3. Once all the node_modules are installed, run: `npm run dev`
+  
 ## Feedback
 
 I welcome any feedback you may have regarding the site's design, content, or functionality. Your input is valuable and helps me improve.
