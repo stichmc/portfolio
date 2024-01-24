@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form"
 import * as z from "zod"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -14,7 +13,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-
 import {
   Form,
   FormControl,
@@ -24,7 +22,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
-
 import {
   Select,
   SelectContent,
@@ -56,96 +53,115 @@ const ContactInfo = () => {
   }
 
   return (
-    <div className="grid grid-cols-3">
-      <Card className="w-[160px]">
-        <CardHeader>
-          <CardTitle><img src="./linkedin.svg" className="h-10 w-10"/>LinkedIn</CardTitle>
-        </CardHeader>
-        <CardContent>
-        <a
-        href="https://www.linkedin.com/in/mcstich?trk=profile-badge"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
-      >
-        View Profile
-        </a>
-        </CardContent>
-      </Card>
+    <div className="flex justify-center items-start">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105">
+          <CardHeader>
+            <CardTitle className=""><img src="./linkedin.svg" className="h-10 w-10"/>LinkedIn</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <a
+              href="https://www.linkedin.com/in/mcstich?trk=profile-badge"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
+            >
+              View Profile
+            </a>
+          </CardContent>
+        </Card>
 
-      <Card className="w-[160px]">
-        <CardHeader>
-          <CardTitle><img src="./github.svg" className="h-10 w-10"/>GitHub</CardTitle>
-        </CardHeader>
-        <CardContent>
-        <a
-        href="https://github.com/stichmc"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
-      >
-        View Profile
-        </a>
-        </CardContent>
-      </Card>
+        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105">
+          <CardHeader>
+            <CardTitle><img src="./github.svg" className="h-10 w-10"/>GitHub</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <a
+              href="https://github.com/stichmc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
+            >
+              View Profile
+            </a>
+          </CardContent>
+        </Card>
 
-      <Card className="w-[160px]">
-        <CardHeader>
-          <CardTitle><img src="./stack-overflow.svg" className="h-10 w-10"/>Stack Overflow</CardTitle>
-        </CardHeader>
-        <CardContent>
-        <a
-        href="https://github.com/stichmc"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
-      >
-        View Profile
-        </a>
-        </CardContent>
-      </Card>
+        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105">
+          <CardHeader>
+            <CardTitle><img src="./stack-overflow.svg" className="h-10 w-10"/>Stack Overflow</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <a
+              href="https://github.com/stichmc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
+            >
+              View Profile
+            </a>
+          </CardContent>
+        </Card>
 
-      <Card className="w-[350px]">
-        <CardHeader>
-          <CardTitle>Direct Message</CardTitle>
-          <CardDescription>Instead of contacting me through my other contact methods, feel free to directly message me here.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Your Name</FormLabel>
-                    <FormControl>
-                      <Input {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button type="submit" className="rounded-full">Submit</Button>
-            </form>
-          </Form>
-        </CardContent>
-      </Card>
+        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105">
+          <CardHeader>
+            <CardTitle><img src="./outlook.svg" className="h-10 w-10"/>Email</CardTitle>
+            <CardDescription>mcstich@outlook.com</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <a
+              href="mailto:mcstich@outlook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
+            >
+              Send Email
+            </a>
+          </CardContent>
+        </Card>
+      </div>
+
+        {/* <Card className="w-full sm:col-span-2 md:col-span-3 transition-transform transform hover:scale-105">
+          <CardHeader>
+            <CardTitle>Direct Message</CardTitle>
+            <CardDescription>Instead of contacting me through my other contact methods, feel free to directly message me here.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Your Name</FormLabel>
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Email</FormLabel>
+                      <FormControl>
+                        <Input {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <Button type="submit" className="rounded-full">Submit</Button>
+              </form>
+            </Form>
+          </CardContent>
+        </Card> */}
     </div>
   )
 }
 
-export default ContactInfo
+export default ContactInfo;

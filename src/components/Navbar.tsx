@@ -37,7 +37,8 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function Navbar() {
   return (
-      <NavigationMenu className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div className="flex justify-center p-4 ">
+      <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
             <Link to="/about-me">
@@ -88,6 +89,8 @@ export default function Navbar() {
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+      <hr className="border-b my-2" />
+    </div>
   );
 }
 
