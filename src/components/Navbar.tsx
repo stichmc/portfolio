@@ -45,8 +45,8 @@ const aboutMeComponents: { title: string; href: string }[] = [
     href: "/about-me/education",
   },
   {
-    title: "Work History",
-    href: "/about-me/work-history",
+    title: "Work Experience",
+    href: "/about-me/work-experience",
   },
   {
     title: "Skills",

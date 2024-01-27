@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
 const Home = () => {
   const handleDownload = () => {
@@ -12,8 +12,18 @@ const Home = () => {
     document.body.removeChild(anchor);
   };
 
+  const [fadeIn, setFadeIn] = useState(false);
+
+  useEffect(() => {
+    setFadeIn(true);
+  }, []);
+
   return (
-    <div className="flex justify-center items-center h-full mt-48">
+    <div
+      className={`flex justify-center items-center h-full mt-48 ${
+        fadeIn ? "opacity-100 duration-1000" : "opacity-0 duration-500"
+      } transition-opacity`}
+    >
       <div className="text-black p-8 rounded-md shadow-lg max-w-3xl">
         <h1 className="text-4xl font-bold mb-4">Hi, I'm Michael Stich!</h1>
         <h2 className="text-2xl mb-4">

@@ -10,7 +10,7 @@ import Footer from "./components/Footer.tsx";
 // Pages
 import Home from "./pages/Home.tsx";
 import Education from "./pages/about-me/Education.tsx";
-import WorkHistory from "./pages/about-me/WorkHistory.tsx";
+import WorkExperience from "./pages/about-me/WorkExperience.tsx";
 import Skills from "./pages/about-me/Skills.tsx";
 import Synergy from "./pages/projects/Synergy.tsx";
 import WheelWizard from "./pages/projects/WheelWizard.tsx";
@@ -27,7 +27,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/home" element={<Home />} />
 
         <Route path="/about-me/education" element={<Education />} />
-        <Route path="/about-me/work-history" element={<WorkHistory />} />
+        <Route path="/about-me/work-experience" element={<WorkExperience />} />
         <Route path="/about-me/skills" element={<Skills />} />
 
         <Route path="/projects/synergy" element={<Synergy />} />

@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-const WorkHistory = () => {
+const WorkExperience = () => {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
     setFadeIn(true);
   }, []);
 
-  const workHistoryData = [
+  const workExperienceData = [
     {
       id: 1,
       position: "Full Stack Software Developer Intern",
@@ -49,7 +49,7 @@ const WorkHistory = () => {
         "Learned to spark amazing and fruitful conversations with strangers",
       ],
       location: "Boulder, CO",
-      logo: "/nasa.svg", // Placeholder logo
+      logo: "/rnl.png",
     },
     {
       id: 4,
@@ -63,7 +63,7 @@ const WorkHistory = () => {
         "Developed attention to detail in work",
       ],
       location: "Glenwood Springs, CO",
-      logo: "/nasa.svg", // Placeholder logo
+      logo: "/ups.png",
     },
     {
       id: 5,
@@ -77,7 +77,7 @@ const WorkHistory = () => {
         "Developed perseverance and critical thinking under pressure",
       ],
       location: "Parker, CO",
-      logo: "/nasa.svg", // Placeholder logo
+      logo: "/johnson.jpg",
     },
     {
       id: 6,
@@ -91,21 +91,21 @@ const WorkHistory = () => {
         "Ensured customers had functioning, safe, and reliable tires on their cars",
       ],
       location: "Parker, CO",
-      logo: "/nasa.svg", // Placeholder logo
+      logo: "/discount.jpg",
     },
-  ];  
+  ];
   return (
     <div
-      className={`flex justify-center items-center h-full ${
+      className={`flex justify-center items-center h-full mb-32 ${
         fadeIn ? "opacity-100 duration-1000" : "opacity-0 duration-500"
       } transition-opacity`}
     >
-      <div className="text-black p-8 rounded-md shadow-lg max-w-3xl">
-        <h1 className="text-4xl font-bold mb-6">Work History</h1>
-        {workHistoryData.map((job) => (
+      <div className="text-black p-8 rounded-md shadow-lg max-w-4xl">
+        <h1 className="text-4xl font-bold mb-6">Work Experience</h1>
+        {workExperienceData.map((job) => (
           <div
             key={job.id}
-            className="flex items-center border border-black p-4 rounded mb-8"
+            className="flex items-center border border-black p-4 rounded mb-4"
           >
             <div className="flex-shrink-0 w-16 h-16 mr-4">
               <img
@@ -133,4 +133,4 @@ const WorkHistory = () => {
   );
 };
 
-export default WorkHistory;
+export default WorkExperience;
