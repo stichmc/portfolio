@@ -72,9 +72,9 @@ const WorkExperience = () => {
       startDate: "May 2021",
       endDate: "Aug 2021",
       responsibilities: [
-        "Performed backbreaking work with elongated hours",
         "Safely packed, moved, and stored customer’s valuables",
         "Developed perseverance and critical thinking under pressure",
+        "Learned the value of hard work through physically demanding tasks that lasted 13+ hours",
       ],
       location: "Parker, CO",
       logo: "/johnson.jpg",
