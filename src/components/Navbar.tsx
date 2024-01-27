@@ -17,10 +17,9 @@ const projectComponents: {
   description: string;
 }[] = [
   {
-    title: "Wheel Wizard",
-    href: "/projects/wheel-wizard",
-    description:
-      "A used-car website for browsing, posting, and purchasing used cars.",
+    title: "Beyond Game Engine",
+    href: "/projects/beyond-engine",
+    description: "A 3D video game engine utilizing the Vulkan graphics API.",
   },
   {
     title: "Speech-to-text translator",
@@ -37,20 +36,11 @@ const projectComponents: {
     href: "/projects/doom",
     description: "A 2D video game entirely in C++, inspired by DOOM.",
   },
-];
-
-const aboutMeComponents: { title: string; href: string }[] = [
   {
-    title: "Education",
-    href: "/about-me/education",
-  },
-  {
-    title: "Work Experience",
-    href: "/about-me/work-experience",
-  },
-  {
-    title: "Skills",
-    href: "/about-me/skills",
+    title: "Wheel Wizard",
+    href: "/projects/wheel-wizard",
+    description:
+      "A used-car website for browsing, posting, and purchasing used cars.",
   },
 ];
 
@@ -68,20 +58,19 @@ export default function Navbar() {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="text-lg font-bold">
-              About Me
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="grid gap-3 p-4 md:w-[200px] lg:w-[200px] lg:grid-cols-1">
-                {aboutMeComponents.map((aboutMeComponent) => (
-                  <ListItem
-                    key={aboutMeComponent.title}
-                    title={aboutMeComponent.title}
-                    href={aboutMeComponent.href}
-                  ></ListItem>
-                ))}
-              </ul>
-            </NavigationMenuContent>
+            <Link to="/education">
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <p className="text-lg font-bold">Education</p>
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <Link to="/work-experience">
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <p className="text-lg font-bold">Work Experience</p>
+              </NavigationMenuLink>
+            </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
