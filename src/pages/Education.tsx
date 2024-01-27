@@ -30,7 +30,7 @@ const Education = () => {
 
   return (
     <div
-      className={`flex justify-center items-center h-full mt-16 ${
+      className={`flex justify-center items-center h-full ${
         fadeIn ? "opacity-100 duration-1000" : "opacity-0 duration-500"
       } transition-opacity`}
     >
