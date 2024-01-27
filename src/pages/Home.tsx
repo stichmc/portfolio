@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 const Home = () => {
   return (
-    <div className="flex justify-center items-start h-3/4">
+    <div className="flex justify-center items-center h-full mt-48">
       <div className="text-black p-8 rounded-md shadow-lg max-w-3xl">
         <h1 className="text-4xl font-bold mb-4">Hi, I'm Michael Stich!</h1>
         <h2 className="text-2xl font-bold mb-4">
