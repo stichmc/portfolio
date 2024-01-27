@@ -1,4 +1,12 @@
+import { useState, useEffect } from "react";
+
 const Education = () => {
+  const [fadeIn, setFadeIn] = useState(false);
+
+  useEffect(() => {
+    setFadeIn(true);
+  }, []);
+
   const educationData = [
     {
       id: 1,
@@ -21,7 +29,11 @@ const Education = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center h-full mt-16">
+    <div
+      className={`flex justify-center items-center h-full mt-16 ${
+        fadeIn ? "opacity-100 duration-1000" : "opacity-0 duration-500"
+      } transition-opacity`}
+    >
       <div className="text-black p-8 rounded-md shadow-lg max-w-3xl">
         <h1 className="text-4xl font-bold mb-6">Education</h1>
         <div className="grid gap-8">
@@ -35,7 +47,11 @@ const Education = () => {
           ))}
         </div>
       </div>
-      <div className="ml-12 hidden xl:block relative h-96 w-96">
+      <div
+        className={`ml-12 hidden xl:block relative h-96 w-96 transition-opacity ${
+          fadeIn ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <div className="h-full w-full rounded-full shadow-2xl overflow-hidden">
           <img
             src="/buffs.svg"
