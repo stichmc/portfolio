@@ -24,19 +24,17 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Navbar />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<Home />}/>
+        <Route path="/home" element={<Home />} />
 
-        <Route path="/about-me/education" element={<Education />}/>
-        <Route path="/about-me/work-history" element={<WorkHistory />}/>
-        <Route path="/about-me/skills" element={<Skills />}/>
+        <Route path="/about-me/education" element={<Education />} />
+        <Route path="/about-me/work-history" element={<WorkHistory />} />
+        <Route path="/about-me/skills" element={<Skills />} />
 
         <Route path="/projects/synergy" element={<Synergy />} />
         <Route path="/projects/wheel-wizard" element={<WheelWizard />} />
         <Route path="/projects/speech-to-text" element={<SpeechText />} />
         <Route path="/projects/time-escapement" element={<TimeEscapement />} />
         <Route path="/projects/doom" element={<Doom />} />
-
-
       </Routes>
       <Footer />
     </BrowserRouter>

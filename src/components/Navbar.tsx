@@ -11,7 +11,11 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const projectComponents: { title: string; href: string; description: string }[] = [
+const projectComponents: {
+  title: string;
+  href: string;
+  description: string;
+}[] = [
   {
     title: "Wheel Wizard",
     href: "/projects/wheel-wizard",
@@ -52,19 +56,21 @@ const aboutMeComponents: { title: string; href: string }[] = [
 
 export default function Navbar() {
   return (
-    <div className="flex justify-center p-4 ">
+    <div className="flex justify-center p-4">
       <NavigationMenu>
         <NavigationMenuList>
-        <NavigationMenuItem>
+          <NavigationMenuItem>
             <Link to="/home">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Home
-            </NavigationMenuLink>
-          </Link>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <p className="text-lg font-bold">Home</p>
+              </NavigationMenuLink>
+            </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger>About Me</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="text-lg font-bold">
+              About Me
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-4 md:w-[200px] lg:w-[200px] lg:grid-cols-1">
                 {aboutMeComponents.map((aboutMeComponent) => (
@@ -72,15 +78,16 @@ export default function Navbar() {
                     key={aboutMeComponent.title}
                     title={aboutMeComponent.title}
                     href={aboutMeComponent.href}
-                  >
-                  </ListItem>
+                  ></ListItem>
                 ))}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="text-lg font-bold">
+              Projects
+            </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
@@ -90,7 +97,9 @@ export default function Navbar() {
                       to="/projects/synergy"
                     >
                       <img className="h-14 w-14" src="/synergy_logo.svg" />
-                      <div className="mb-2 mt-4 text-lg font-medium">Synergy</div>
+                      <div className="mb-2 mt-4 text-lg font-medium">
+                        Synergy
+                      </div>
                       <p className="text-sm leading-tight text-muted-foreground">
                         A more trustworthy, reliable, and secure platform for
                         collaboration and communication.

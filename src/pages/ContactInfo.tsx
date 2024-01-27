@@ -1,10 +1,10 @@
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import * as z from "zod"
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
 // import { Input } from "@/components/ui/input"
 // import { Label } from "@/components/ui/label"
-import { Link } from "react-router-dom"
-import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -12,7 +12,7 @@ import {
   // CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 // import {
 //   Form,
 //   FormControl,
@@ -57,51 +57,71 @@ const ContactInfo = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105 shadow-md">
           <CardHeader>
-            <CardTitle className=""><img src="./linkedin.svg" className="h-10 w-10"/>LinkedIn</CardTitle>
+            <CardTitle className="">
+              <img src="./linkedin.svg" className="h-10 w-10" />
+              LinkedIn
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <Link to="https://www.linkedin.com/in/mcstich?trk=profile-badge">
-                <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">View Profile</Button>
+              <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">
+                View Profile
+              </Button>
             </Link>
           </CardContent>
         </Card>
 
         <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105 shadow-md">
           <CardHeader>
-            <CardTitle><img src="./github.svg" className="h-10 w-10"/>GitHub</CardTitle>
+            <CardTitle>
+              <img src="./github.svg" className="h-10 w-10" />
+              GitHub
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <Link to="https://github.com/stichmc">
-                <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">View Profile</Button>
+              <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">
+                View Profile
+              </Button>
             </Link>
           </CardContent>
         </Card>
 
         <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105 shadow-md">
           <CardHeader>
-            <CardTitle><img src="./stack-overflow.svg" className="h-10 w-10"/>Stack Overflow</CardTitle>
+            <CardTitle>
+              <img src="./stack-overflow.svg" className="h-10 w-10" />
+              Stack Overflow
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <Link to="https://stackoverflow.com/users/21374669/stichmc">
-                <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">View Profile</Button>
+              <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">
+                View Profile
+              </Button>
             </Link>
           </CardContent>
         </Card>
 
         <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105 shadow-md">
           <CardHeader>
-            <CardTitle><img src="./outlook.svg" className="h-10 w-10"/>Email</CardTitle>
+            <CardTitle>
+              <img src="./outlook.svg" className="h-10 w-10" />
+              Email
+            </CardTitle>
             <CardDescription>mcstich@outlook.com</CardDescription>
           </CardHeader>
           <CardContent>
             <Link to="mailto:mcstich@outlook.com">
-                <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">View Profile</Button>
+              <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">
+                View Profile
+              </Button>
             </Link>
           </CardContent>
         </Card>
       </div>
 
-        {/* <Card className="w-full sm:col-span-2 md:col-span-3 transition-transform transform hover:scale-105">
+      {/* <Card className="w-full sm:col-span-2 md:col-span-3 transition-transform transform hover:scale-105">
           <CardHeader>
             <CardTitle>Direct Message</CardTitle>
             <CardDescription>Instead of contacting me through my other contact methods, feel free to directly message me here.</CardDescription>
@@ -141,7 +161,7 @@ const ContactInfo = () => {
           </CardContent>
         </Card> */}
     </div>
-  )
-}
+  );
+};
 
 export default ContactInfo;
