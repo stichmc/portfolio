@@ -31,7 +31,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="ml-12">
+      <div className="ml-12 hidden xl:block">
+        {/* Hidden on screens smaller than medium */}
         <img src="/miguel.jpg" className="h-64 w-64 rounded-full shadow-2xl" />
       </div>
     </div>
