@@ -90,7 +90,7 @@ export default function Navbar() {
                         Synergy
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
-                        A more trustworthy, reliable, and secure platform for
+                        A more trustworthy, reliable, and secure webapp for
                         collaboration and communication.
                       </p>
                     </Link>
