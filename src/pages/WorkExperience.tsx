@@ -9,7 +9,7 @@ const WorkExperience = () => {
 
   const workExperienceData = [
     {
-      id: 1,
+      id: 6,
       position: "Full Stack Software Developer Intern",
       company: "National Aeronautics and Space Administration (NASA)",
       startDate: "June 2023",
@@ -23,7 +23,7 @@ const WorkExperience = () => {
       logo: "/nasa.svg",
     },
     {
-      id: 2,
+      id: 5,
       position: "NPSS Library Software Developer Intern",
       company: "National Aeronautics and Space Administration (NASA)",
       startDate: "January 2023",
@@ -38,7 +38,7 @@ const WorkExperience = () => {
       logo: "/nasa.svg",
     },
     {
-      id: 3,
+      id: 4,
       position: "CU Foundation Engagement Ambassador",
       company: "Ruffalo Noel Levitz",
       startDate: "Aug 2022",
@@ -52,7 +52,7 @@ const WorkExperience = () => {
       logo: "/rnl.png",
     },
     {
-      id: 4,
+      id: 3,
       position: "Logistics Coordinator",
       company: "United Parcel Service (UPS)",
       startDate: "May 2022",
@@ -66,7 +66,7 @@ const WorkExperience = () => {
       logo: "/ups.png",
     },
     {
-      id: 5,
+      id: 2,
       position: "Mover",
       company: "Johnson Storage and Moving",
       startDate: "May 2021",
@@ -80,7 +80,7 @@ const WorkExperience = () => {
       logo: "/johnson.jpg",
     },
     {
-      id: 6,
+      id: 1,
       position: "Tire Service Technician",
       company: "Discount Tire",
       startDate: "May 2019",
