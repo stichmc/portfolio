@@ -8,9 +8,10 @@ import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
 
 // Pages
-import AboutMe from "./pages/AboutMe.tsx";
-import ContactInfo from "./pages/ContactInfo.tsx";
-import Resume from "./pages/Resume.tsx";
+import Home from "./pages/Home.tsx";
+import Education from "./pages/about-me/Education.tsx";
+import WorkHistory from "./pages/about-me/WorkHistory.tsx";
+import Skills from "./pages/about-me/Skills.tsx";
 import Synergy from "./pages/projects/Synergy.tsx";
 import WheelWizard from "./pages/projects/WheelWizard.tsx";
 import SpeechText from "./pages/projects/SpeechText.tsx";
@@ -22,10 +23,12 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Navigate to="/about-me" />} />
-        <Route path="/about-me" element={<AboutMe />}/>
-        <Route path="/resume" element={<Resume />}/>
-        <Route path="/contact-info" element={<ContactInfo />}/>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home />}/>
+
+        <Route path="/about-me/education" element={<Education />}/>
+        <Route path="/about-me/work-history" element={<WorkHistory />}/>
+        <Route path="/about-me/skills" element={<Skills />}/>
 
         <Route path="/projects/synergy" element={<Synergy />} />
         <Route path="/projects/wheel-wizard" element={<WheelWizard />} />

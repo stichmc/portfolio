@@ -11,7 +11,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const components: { title: string; href: string; description: string }[] = [
+const projectComponents: { title: string; href: string; description: string }[] = [
   {
     title: "Wheel Wizard",
     href: "/projects/wheel-wizard",
@@ -35,25 +35,48 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ];
 
+const aboutMeComponents: { title: string; href: string }[] = [
+  {
+    title: "Education",
+    href: "/about-me/education",
+  },
+  {
+    title: "Work History",
+    href: "/about-me/work-history",
+  },
+  {
+    title: "Skills",
+    href: "/about-me/skills",
+  },
+];
+
 export default function Navbar() {
   return (
     <div className="flex justify-center p-4 ">
       <NavigationMenu>
         <NavigationMenuList>
-          <NavigationMenuItem>
-            <Link to="/about-me">
+        <NavigationMenuItem>
+            <Link to="/home">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About Me
+              Home
             </NavigationMenuLink>
           </Link>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link to="/contact-info">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Contact Info
-            </NavigationMenuLink>
-          </Link>
+            <NavigationMenuTrigger>About Me</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid gap-3 p-4 md:w-[200px] lg:w-[200px] lg:grid-cols-1">
+                {aboutMeComponents.map((aboutMeComponent) => (
+                  <ListItem
+                    key={aboutMeComponent.title}
+                    title={aboutMeComponent.title}
+                    href={aboutMeComponent.href}
+                  >
+                  </ListItem>
+                ))}
+              </ul>
+            </NavigationMenuContent>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
@@ -75,13 +98,13 @@ export default function Navbar() {
                     </Link>
                   </NavigationMenuLink>
                 </li>
-                {components.map((component) => (
+                {projectComponents.map((projectComponent) => (
                   <ListItem
-                    key={component.title}
-                    title={component.title}
-                    href={component.href}
+                    key={projectComponent.title}
+                    title={projectComponent.title}
+                    href={projectComponent.href}
                   >
-                    {component.description}
+                    {projectComponent.description}
                   </ListItem>
                 ))}
               </ul>

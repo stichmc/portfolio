@@ -1,122 +1,102 @@
-import * as React from "react"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+// import { Input } from "@/components/ui/input"
+// import { Label } from "@/components/ui/label"
+import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
+  // CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+// import {
+//   Form,
+//   FormControl,
+//   FormDescription,
+//   FormField,
+//   FormItem,
+//   FormLabel,
+//   FormMessage,
+// } from "@/components/ui/form"
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select"
 
-const formSchema = z.object({
-  name: z.string().min(2, {
-    message: "Your name must be at least 2 characters.",
-  }),
-  email: z.string().min(2, {
-    message: "Your name must be at least 2 characters.",
-  }),
-})
+// const formSchema = z.object({
+//   name: z.string().min(2, {
+//     message: "Your name must be at least 2 characters.",
+//   }),
+//   email: z.string().min(2, {
+//     message: "Your name must be at least 2 characters.",
+//   }),
+// })
 
 const ContactInfo = () => {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-    },
-  })
+  // const form = useForm<z.infer<typeof formSchema>>({
+  //   resolver: zodResolver(formSchema),
+  //   defaultValues: {
+  //     name: "",
+  //     email: "",
+  //   },
+  // })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-  }
+  // function onSubmit(values: z.infer<typeof formSchema>) {
+  //   console.log(values)
+  // }
 
   return (
     <div className="flex justify-center items-start">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
-        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105 shadow-md">
           <CardHeader>
             <CardTitle className=""><img src="./linkedin.svg" className="h-10 w-10"/>LinkedIn</CardTitle>
           </CardHeader>
           <CardContent>
-            <a
-              href="https://www.linkedin.com/in/mcstich?trk=profile-badge"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
-            >
-              View Profile
-            </a>
+            <Link to="https://www.linkedin.com/in/mcstich?trk=profile-badge">
+                <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">View Profile</Button>
+            </Link>
           </CardContent>
         </Card>
 
-        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105">
+        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105 shadow-md">
           <CardHeader>
             <CardTitle><img src="./github.svg" className="h-10 w-10"/>GitHub</CardTitle>
           </CardHeader>
           <CardContent>
-            <a
-              href="https://github.com/stichmc"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
-            >
-              View Profile
-            </a>
+            <Link to="https://github.com/stichmc">
+                <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">View Profile</Button>
+            </Link>
           </CardContent>
         </Card>
 
-        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105">
+        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105 shadow-md">
           <CardHeader>
             <CardTitle><img src="./stack-overflow.svg" className="h-10 w-10"/>Stack Overflow</CardTitle>
           </CardHeader>
           <CardContent>
-            <a
-              href="https://github.com/stichmc"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
-            >
-              View Profile
-            </a>
+            <Link to="https://stackoverflow.com/users/21374669/stichmc">
+                <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">View Profile</Button>
+            </Link>
           </CardContent>
         </Card>
 
-        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105">
+        <Card className="w-full sm:w-[210px] sm:h-[180px] transition-transform transform hover:scale-105 shadow-md">
           <CardHeader>
             <CardTitle><img src="./outlook.svg" className="h-10 w-10"/>Email</CardTitle>
             <CardDescription>mcstich@outlook.com</CardDescription>
           </CardHeader>
           <CardContent>
-            <a
-              href="mailto:mcstich@outlook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm"
-            >
-              Send Email
-            </a>
+            <Link to="mailto:mcstich@outlook.com">
+                <Button className="bg-gray-950 text-white px-4 py-2 rounded-full text-sm">View Profile</Button>
+            </Link>
           </CardContent>
         </Card>
       </div>
