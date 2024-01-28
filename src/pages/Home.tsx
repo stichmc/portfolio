@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <div
-      className={`flex justify-center items-center h-full mt-[10%] ${
+      className={`flex justify-center items-center h-full p-20 ${
         fadeIn ? "opacity-100 duration-1000" : "opacity-0 duration-500"
       } transition-opacity`}
     >
