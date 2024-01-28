@@ -2,15 +2,15 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
 const Home = () => {
-  const handleDownload = () => {
-    const pdfFilePath = `${import.meta.env.BASE_URL}resume.pdf`;
-    const anchor = document.createElement("a");
-    anchor.href = pdfFilePath;
-    anchor.download = "Michael_Stich_Resume.pdf";
-    document.body.appendChild(anchor);
-    anchor.click();
-    document.body.removeChild(anchor);
-  };
+  // const handleDownload = () => {
+  //   const pdfFilePath = `${import.meta.env.BASE_URL}resume.pdf`;
+  //   const anchor = document.createElement("a");
+  //   anchor.href = pdfFilePath;
+  //   anchor.download = "Michael_Stich_Resume.pdf";
+  //   document.body.appendChild(anchor);
+  //   anchor.click();
+  //   document.body.removeChild(anchor);
+  // };
 
   const [fadeIn, setFadeIn] = useState(false);
 
@@ -31,14 +31,14 @@ const Home = () => {
           software development experience.
         </h2>
 
-        <div className="flex items-center space-x-4 mb-4">
+        <a href= {`${import.meta.env.BASE_URL}Michael_Stich_Resume.pdf`} target="_blank" className="flex items-center space-x-4 mb-4">
           <Button
-            onClick={handleDownload}
+            // onClick={handleDownload}
             className="bg-gray-950 text-white px-4 py-2 rounded-full text-lg transition-transform transform hover:scale-110"
           >
             Download Resume
           </Button>
-        </div>
+        </a>
       </div>
 
       <div className="ml-12 hidden xl:block">
