@@ -107,7 +107,7 @@ const WorkExperience = () => {
             key={job.id}
             className="flex items-center border border-black p-4 rounded mb-4"
           >
-            <div className="flex-shrink-0 w-16 h-16 mr-4">
+            <div className="hidden sm:block flex-shrink-0 w-16 h-16 mr-4">
               <img
                 src={job.logo}
                 className="w-full h-full object-contain rounded-full mt-[-2]"

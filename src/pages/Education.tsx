@@ -34,7 +34,7 @@ const Education = () => {
         fadeIn ? "opacity-100 duration-1000" : "opacity-0 duration-500"
       } transition-opacity mb-32`}
     >
-      <div className="text-black p-8 rounded-md shadow-lg max-w-3xl">
+      <div className="text-black p-8 rounded-md shadow-lg max-w-4xl">
         <h1 className="text-4xl font-bold mb-6">Education</h1>
         <div className="grid gap-8">
           {educationData.map((edu) => (
