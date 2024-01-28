@@ -17,11 +17,11 @@ const Synergy = () => {
       <div className="text-black p-8 rounded-md shadow-lg max-w-full">
         <div className="flex justify-between items-center">
           <h1 className="text-4xl font-bold mb-6">Project Synergy</h1>
-          <Link to="https://www.google.com" target="_blank">
+          <Link to="https://www.synergyonline.app" target="_blank">
             <div className="relative h-36 w-36 transition-transform transform hover:scale-110">
               <div className="h-full w-full rounded-full shadow-2xl overflow-hidden">
                 <img
-                  src="/synergy_logo.svg"
+                  src= {`${import.meta.env.BASE_URL}synergy_logo.svg`}
                   className="h-full w-full object-contain mx-auto my-auto p-4 mt-1"
                   alt="Synergy Logo"
                 />

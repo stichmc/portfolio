@@ -50,7 +50,7 @@ const Education = () => {
       <div className="ml-12 hidden xl:block relative h-96 w-96">
         <div className="h-full w-full rounded-full shadow-xl overflow-hidden">
           <img
-            src="/buffs.svg"
+            src={`${import.meta.env.BASE_URL}buffs.svg`}
             className="h-3/4 w-3/4 mx-auto my-auto object-contain mt-10"
             alt="Buff Logo"
           />

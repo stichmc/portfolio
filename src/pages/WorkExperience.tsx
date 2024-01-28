@@ -20,7 +20,7 @@ const WorkExperience = () => {
         "Implemented a new fast frequency measurement algorithm in VHDL for the prototype’s FPGA clock",
       ],
       location: "Cleveland, Ohio",
-      logo: "/nasa.svg",
+      logo: `${import.meta.env.BASE_URL}nasa.svg`,
     },
     {
       id: 5,
@@ -35,7 +35,7 @@ const WorkExperience = () => {
         "Developed a GitHub self-hosted runner that can automate any NPSS development project",
       ],
       location: "Remote",
-      logo: "/nasa.svg",
+      logo: `${import.meta.env.BASE_URL}nasa.svg`,
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ const WorkExperience = () => {
         "Learned to spark amazing and fruitful conversations with strangers",
       ],
       location: "Boulder, CO",
-      logo: "/rnl.png",
+      logo: `${import.meta.env.BASE_URL}rnl.png`,
     },
     {
       id: 3,
@@ -63,7 +63,7 @@ const WorkExperience = () => {
         "Developed attention to detail in work",
       ],
       location: "Glenwood Springs, CO",
-      logo: "/ups.png",
+      logo: `${import.meta.env.BASE_URL}ups.png`,
     },
     {
       id: 2,
@@ -77,7 +77,7 @@ const WorkExperience = () => {
         "Learned the value of hard work through physically demanding tasks that lasted 13+ hours",
       ],
       location: "Parker, CO",
-      logo: "/johnson.jpg",
+      logo: `${import.meta.env.BASE_URL}johnson.jpg`,
     },
     {
       id: 1,
@@ -91,7 +91,7 @@ const WorkExperience = () => {
         "Ensured customers had functioning, safe, and reliable tires on their cars",
       ],
       location: "Parker, CO",
-      logo: "/discount.jpg",
+      logo: `${import.meta.env.BASE_URL}discount.jpg`,
     },
   ];
   return (

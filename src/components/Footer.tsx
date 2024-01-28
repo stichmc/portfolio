@@ -8,14 +8,14 @@ const Footer = () => {
         target="_blank"
       >
         <img
-          src="/linkedin.svg"
+          src={`${import.meta.env.BASE_URL}linkedin.svg`}
           className="h-14 w-14 transition-transform transform hover:scale-125"
           alt="LinkedIn"
         />
       </Link>
       <Link to="https://github.com/stichmc" target="_blank">
         <img
-          src="/github.svg"
+          src={`${import.meta.env.BASE_URL}github.svg`}
           className="h-12 w-12 transition-transform transform hover:scale-125"
           alt="GitHub"
         />
@@ -25,14 +25,14 @@ const Footer = () => {
         target="_blank"
       >
         <img
-          src="/stack-overflow.svg"
+          src={`${import.meta.env.BASE_URL}stack-overflow.svg`}
           className="h-14 w-14 transition-transform transform hover:scale-125"
           alt="Stack Overflow"
         />
       </Link>
       <Link to="mailto:mcstich@outlook.com" target="_blank">
         <img
-          src="/outlook.svg"
+          src={`${import.meta.env.BASE_URL}outlook.svg`}
           className="h-14 w-14 transition-transform transform hover:scale-125"
           alt="Outlook"
         />

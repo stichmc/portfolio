@@ -18,27 +18,27 @@ const projectComponents: {
 }[] = [
   {
     title: "Beyond Game Engine",
-    href: "/projects/beyond-engine",
+    href: `${import.meta.env.BASE_URL}projects/beyond-engine`,
     description: "A 3D video game engine utilizing the Vulkan graphics API.",
   },
   {
     title: "Speech-to-text translator",
-    href: "/projects/speech-to-text",
+    href: `${import.meta.env.BASE_URL}projects/speech-to-text`,
     description: "A real-time deep learning-based speech-to-text translator.",
   },
   {
     title: "Time Escapement",
-    href: "/projects/time-escapement",
+    href: `${import.meta.env.BASE_URL}projects/time-escapement`,
     description: "A 17th-century time escapement clock.",
   },
   {
     title: "C++ Console Based Game",
-    href: "/projects/doom",
+    href: `${import.meta.env.BASE_URL}projects/doom`,
     description: "A 2D video game entirely in C++, inspired by DOOM.",
   },
   {
     title: "Wheel Wizard",
-    href: "/projects/wheel-wizard",
+    href: `${import.meta.env.BASE_URL}projects/wheel-wizard`,
     description:
       "A used-car website for browsing, posting, and purchasing used cars.",
   },
@@ -50,7 +50,7 @@ export default function Navbar() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <Link to="/home">
+            <Link to={`${import.meta.env.BASE_URL}home`}>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 <p className="text-lg font-bold">Home</p>
               </NavigationMenuLink>
@@ -58,7 +58,7 @@ export default function Navbar() {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link to="/education">
+            <Link to={`${import.meta.env.BASE_URL}education`}>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 <p className="text-lg font-bold">Education</p>
               </NavigationMenuLink>
@@ -66,7 +66,7 @@ export default function Navbar() {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <Link to="/work-experience">
+            <Link to={`${import.meta.env.BASE_URL}work-experience`}>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 <p className="text-lg font-bold">Work Experience</p>
               </NavigationMenuLink>
@@ -83,9 +83,9 @@ export default function Navbar() {
                   <NavigationMenuLink asChild>
                     <Link
                       className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                      to="/projects/synergy"
+                      to={`${import.meta.env.BASE_URL}projects/synergy`}
                     >
-                      <img className="h-14 w-14" src="/synergy_logo.svg" />
+                      <img className="h-14 w-14" src={`${import.meta.env.BASE_URL}synergy_logo.svg`} />
                       <div className="mb-2 mt-4 text-lg font-medium">
                         Synergy
                       </div>
