@@ -22,7 +22,7 @@ const Home = () => {
     <div
       className={`flex justify-center items-center h-full p-20 ${
         fadeIn ? "opacity-100 duration-1000" : "opacity-0 duration-500"
-      } transition-opacity`}
+      } transition-opacity mb-10`}
     >
       <div className="text-black p-8 rounded-md shadow-lg max-w-3xl">
         <h1 className="text-4xl font-bold mb-4">Hi, I'm Michael Stich!</h1>
