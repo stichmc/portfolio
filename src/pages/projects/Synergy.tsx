@@ -36,12 +36,15 @@ const Synergy = () => {
               Refining Online Communication
             </h1>
             <p className="text-gray-700 mb-8">
-              Synergy is an innovative web application dedicated to refining
-              online communication, encapsulating the essence of
-              confidentiality, transparency, and user-friendliness. As the lead
-              developer, my focus was on creating a robust technical foundation
-              and ensuring an intuitive user experience for a concise and
-              easy-to-understand platform.
+              Synergy is a social media chat app that aims to improve online
+              communication by providing a platform that's confidential,
+              transparent, and user-friendly. Synergy encapsulates all the great
+              features of other messaging apps and combines them into a platform
+              that puts users first. The app's design focuses on creating a
+              strong technical foundation and ensuring an intuitive user
+              experience that simplifies messaging. By doing so, Synergy offers
+              a concise and easy-to-understand platform that enables users to
+              communicate effectively and securely.
             </p>
             <div className="feature-section mb-8">
               <h2 className="text-2xl font-bold mb-4">Key Features:</h2>
