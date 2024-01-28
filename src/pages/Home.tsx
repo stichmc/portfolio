@@ -42,7 +42,7 @@ const Home = () => {
       </div>
 
       <div className="ml-12 hidden xl:block">
-        <img src="/miguel.jpg" className="h-64 w-64 rounded-full shadow-2xl" />
+        <img src="../miguel.jpg" className="h-64 w-64 rounded-full shadow-2xl" />
       </div>
     </div>
   );
