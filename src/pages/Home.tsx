@@ -31,7 +31,11 @@ const Home = () => {
           software development experience.
         </h2>
 
-        <a href= {`${import.meta.env.BASE_URL}Michael_Stich_Resume.pdf`} target="_blank" className="flex items-center space-x-4 mb-4">
+        <a
+          href={`${import.meta.env.BASE_URL}Michael_Stich_Resume.pdf`}
+          target="_blank"
+          className="flex items-center space-x-4 mb-4"
+        >
           <Button
             // onClick={handleDownload}
             className="bg-gray-950 text-white px-4 py-2 rounded-full text-lg transition-transform transform hover:scale-110"
@@ -42,7 +46,10 @@ const Home = () => {
       </div>
 
       <div className="ml-12 hidden xl:block">
-        <img src={`${import.meta.env.BASE_URL}miguel.jpg`} className="h-64 w-64 rounded-full shadow-2xl" />
+        <img
+          src={`${import.meta.env.BASE_URL}miguel.jpg`}
+          className="h-64 w-64 rounded-full shadow-2xl"
+        />
       </div>
     </div>
   );

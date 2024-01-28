@@ -21,7 +21,7 @@ const Synergy = () => {
             <div className="relative h-36 w-36 transition-transform transform hover:scale-110">
               <div className="h-full w-full rounded-full shadow-2xl overflow-hidden">
                 <img
-                  src= {`${import.meta.env.BASE_URL}synergy_logo.svg`}
+                  src={`${import.meta.env.BASE_URL}synergy_logo.svg`}
                   className="h-full w-full object-contain mx-auto my-auto p-4 mt-1"
                   alt="Synergy Logo"
                 />
