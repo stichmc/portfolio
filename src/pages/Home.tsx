@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const Home = () => {
   const handleDownload = () => {
-    const pdfFilePath = "/resume.pdf";
+    const pdfFilePath = `${import.meta.env.BASE_URL}resume.pdf`;
     const anchor = document.createElement("a");
     anchor.href = pdfFilePath;
     anchor.download = "Michael_Stich_Resume.pdf";
