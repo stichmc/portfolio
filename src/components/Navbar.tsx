@@ -46,73 +46,74 @@ const projectComponents: {
 
 export default function Navbar() {
   return (
-    <div className="flex flex-col md:flex-row justify-center p-4">
-  <NavigationMenu>
-    <NavigationMenuList className="md:flex">
-      <NavigationMenuItem>
-        <Link to={`${import.meta.env.BASE_URL}home`}>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            <p className="text-lg font-bold">Home</p>
-          </NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-
-      <NavigationMenuItem>
-        <Link to={`${import.meta.env.BASE_URL}education`}>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            <p className="text-lg font-bold">Education</p>
-          </NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-
-      <NavigationMenuItem>
-        <Link to={`${import.meta.env.BASE_URL}work-experience`}>
-          <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-            <p className="text-lg font-bold">Work Experience</p>
-          </NavigationMenuLink>
-        </Link>
-      </NavigationMenuItem>
-
-      <NavigationMenuItem>
-        <NavigationMenuTrigger className="text-lg font-bold">
-          Projects
-        </NavigationMenuTrigger>
-        <NavigationMenuContent>
-          <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] md:grid-cols-[.75fr_1fr]">
-            <li className="row-span-3">
-              <NavigationMenuLink asChild>
-                <Link
-                  className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                  to={`${import.meta.env.BASE_URL}projects/synergy`}
-                >
-                  <img className="h-14 w-14" src={`${import.meta.env.BASE_URL}synergy_logo.svg`} />
-                  <div className="mb-2 mt-4 text-lg font-medium">
-                    Synergy
-                  </div>
-                  <p className="text-sm leading-tight text-muted-foreground">
-                    A more trustworthy, reliable, and secure webapp for
-                    collaboration and communication.
-                  </p>
-                </Link>
+    <div className="flex flex-col sm:flex-row items-center justify-center p-4">
+      <NavigationMenu>
+        <NavigationMenuList className="sm:flex sm:space-x-4 flex-col sm:flex-row items-center">
+          <NavigationMenuItem>
+            <Link to={`${import.meta.env.BASE_URL}home`}>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <p className="text-lg font-bold">Home</p>
               </NavigationMenuLink>
-            </li>
-            {projectComponents.map((projectComponent) => (
-              <ListItem
-                key={projectComponent.title}
-                title={projectComponent.title}
-                href={projectComponent.href}
-              >
-                {projectComponent.description}
-              </ListItem>
-            ))}
-          </ul>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-    </NavigationMenuList>
-  </NavigationMenu>
-  <hr className="border-b my-2" />
-</div>
+            </Link>
+          </NavigationMenuItem>
 
+          <NavigationMenuItem>
+            <Link to={`${import.meta.env.BASE_URL}education`}>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <p className="text-lg font-bold">Education</p>
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <Link to={`${import.meta.env.BASE_URL}work-experience`}>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <p className="text-lg font-bold">Work Experience</p>
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="text-lg font-bold">
+              Projects
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] md:grid-cols-[.75fr_1fr]">
+                <li className="row-span-3">
+                  <NavigationMenuLink asChild>
+                    <Link
+                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                      to={`${import.meta.env.BASE_URL}projects/synergy`}
+                    >
+                      <img
+                        className="h-14 w-14"
+                        src={`${import.meta.env.BASE_URL}synergy_logo.svg`}
+                      />
+                      <div className="mb-2 mt-4 text-lg font-medium">
+                        Synergy
+                      </div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        A more trustworthy, reliable, and secure webapp for
+                        collaboration and communication.
+                      </p>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+                {projectComponents.map((projectComponent) => (
+                  <ListItem
+                    key={projectComponent.title}
+                    title={projectComponent.title}
+                    href={projectComponent.href}
+                  >
+                    {projectComponent.description}
+                  </ListItem>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu>
+    </div>
   );
 }
 
