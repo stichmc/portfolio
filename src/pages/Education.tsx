@@ -32,7 +32,7 @@ const Education = () => {
     <div
       className={`flex justify-center items-center h-full ${
         fadeIn ? "opacity-100 duration-1000" : "opacity-0 duration-500"
-      } transition-opacity`}
+      } transition-opacity mb-32`}
     >
       <div className="text-black p-8 rounded-md shadow-lg max-w-3xl">
         <h1 className="text-4xl font-bold mb-6">Education</h1>
