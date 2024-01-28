@@ -2,16 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Synergy = () => {
-  const handleDownload = () => {
-    const pdfFilePath = "/resume.pdf";
-    const anchor = document.createElement("a");
-    anchor.href = pdfFilePath;
-    anchor.download = "Michael_Stich_Resume.pdf";
-    document.body.appendChild(anchor);
-    anchor.click();
-    document.body.removeChild(anchor);
-  };
-
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
