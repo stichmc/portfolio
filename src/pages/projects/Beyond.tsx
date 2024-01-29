@@ -41,7 +41,7 @@ const Beyond = () => {
               powerful yet relatable.
             </p>
             <div className=" feature-section mb-8 block items-center md:flex lg:flex xl:flex">
-              <div className="w-1/2 pr-8">
+              <div className="sm:w-1/2 pr-8">
                 -
                 <img
                   src={`${import.meta.env.BASE_URL}beyond-title.jpg`}
@@ -49,7 +49,7 @@ const Beyond = () => {
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="w-1/2">
+              <div className="sm:w-1/2">
                 <h2 className="text-2xl font-bold mb-4">Pixel Art Aspect</h2>
                 <p className="text-gray-700">
                   A significant focus during development has been on the pixel
