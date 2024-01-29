@@ -11,34 +11,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const projectComponents: {
-  title: string;
-  href: string;
-  description: string;
-}[] = [
-  // {
-  //   title: "Speech-to-text translator",
-  //   href: `${import.meta.env.BASE_URL}projects/speech-to-text`,
-  //   description: "A real-time deep learning-based speech-to-text translator.",
-  // },
-  // {
-  //   title: "Time Escapement",
-  //   href: `${import.meta.env.BASE_URL}projects/time-escapement`,
-  //   description: "A 17th-century time escapement clock.",
-  // },
-  // {
-  //   title: "C++ Console Based Game",
-  //   href: `${import.meta.env.BASE_URL}projects/doom`,
-  //   description: "A 2D video game entirely in C++, inspired by DOOM.",
-  // },
-  // {
-  //   title: "Wheel Wizard",
-  //   href: `${import.meta.env.BASE_URL}projects/wheel-wizard`,
-  //   description:
-  //     "A used-car website for browsing, posting, and purchasing used cars.",
-  // },
-];
-
 export default function Navbar() {
   return (
     <div className="flex flex-col sm:flex-row items-center justify-center p-4">
@@ -170,15 +142,6 @@ export default function Navbar() {
                     </Link>
                   </NavigationMenuLink>
                 </li>
-                {/* {projectComponents.map((projectComponent) => (
-                  <ListItem
-                    key={projectComponent.title}
-                    title={projectComponent.title}
-                    href={projectComponent.href}
-                  >
-                    {projectComponent.description}
-                  </ListItem>
-                ))} */}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
