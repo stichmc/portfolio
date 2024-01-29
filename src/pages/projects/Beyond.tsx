@@ -16,7 +16,7 @@ const Beyond = () => {
       <div className="text-black p-8 rounded-md shadow-lg max-w-full">
         <div className="flex justify-between items-center">
           <h1 className="text-4xl font-bold mb-6">Project Beyond</h1>
-          {/* <Link to="https://www.synergyonline.app" target="_blank"> */}
+          {/* <Link to="" target="_blank"> */}
           <div className="relative h-36 w-36 transition-transform transform hover:scale-110">
             <div className="h-full w-full rounded-full shadow-2xl overflow-hidden">
               <img
@@ -30,7 +30,7 @@ const Beyond = () => {
         </div>
 
         <div className="grid gap-8">
-          <div className="synergy-container p-8 max-w-5xl mx-auto">
+          <div className="p-8 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold mb-4">
               Bringing fun back to adventure games
             </h1>
@@ -40,15 +40,15 @@ const Beyond = () => {
               games and my passion for adventure games that really make you feel
               powerful yet relatable.
             </p>
-            <div className=" feature-section mb-8 block items-center md:flex lg:flex xl:flex">
-              <div className="sm:w-1/2 pr-8">
+            <div className="mb-8 block items-center md:flex">
+              <div className="md:w-1/2 pr-8">
                 <img
                   src={`${import.meta.env.BASE_URL}beyond-title.jpg`}
-                  alt="Synergy Feature"
+                  alt="Beyond Title Screen"
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="sm:w-1/2">
+              <div className="md:w-1/2">
                 <h2 className="text-2xl font-bold mb-4">Pixel Art Aspect</h2>
                 <p className="text-gray-700">
                   A significant focus during development has been on the pixel
