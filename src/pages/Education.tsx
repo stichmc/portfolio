@@ -15,7 +15,7 @@ const Education = () => {
       fieldOfStudy: "Data Science",
       date: "May 2026",
       description:
-        "I am currently pursuing a Master of Science degree in Data Science at the University of Colorado Boulder. I am able to do this while simultaneously pursuing my undergraduate degree because CU Boulder offers an accelerated graduate program. The Data Science program focuses on teaching advanced statistical methods, machine learning, and data visualization. The course provides a comprehensive understanding of data acquisition, cleaning, and ethical considerations, both in theory and practice. This program has equipped me with the necessary skills and knowledge to navigate the complexities of data science.",
+        "I am currently pursuing a Master of Science degree in Data Science at the University of Colorado Boulder. I am able to do this while simultaneously pursuing my undergraduate degree because CU Boulder offers a bachelors accelerated graduate program. The Data Science program focuses on teaching advanced statistical methods, machine learning, and data visualization. The course provides a comprehensive understanding of data acquisition, cleaning, and ethical considerations, both in theory and practice. This program has equipped me with the necessary skills and knowledge to navigate the complexities of data science.",
     },
     {
       id: 2,

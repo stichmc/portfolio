@@ -58,9 +58,9 @@ const WorkExperience = () => {
       startDate: "May 2022",
       endDate: "Aug 2022",
       responsibilities: [
+        "Learned the value of paying attention to the details in my work",
         "Improved delivery driver efficiency by organizing packages on mail trucks",
-        "Ensured accurate and timely deliveries",
-        "Developed attention to detail in work",
+        "Ensured accurate and timely deliveries by strategizing which mail trucks would be loaded",
       ],
       location: "Glenwood Springs, CO",
       logo: `${import.meta.env.BASE_URL}ups.png`,
@@ -72,7 +72,7 @@ const WorkExperience = () => {
       startDate: "May 2021",
       endDate: "Aug 2021",
       responsibilities: [
-        "Safely packed, moved, and stored customer’s valuables",
+        "Safely packed, moved, and stored customer’s property",
         "Developed perseverance and critical thinking under pressure",
         "Learned the value of hard work through physically demanding tasks that lasted 13+ hours",
       ],
@@ -86,9 +86,9 @@ const WorkExperience = () => {
       startDate: "May 2019",
       endDate: "Mar 2020",
       responsibilities: [
-        "Learned the importance of customer service to business success",
         "Upheld company standards for customer satisfaction",
         "Ensured customers had functioning, safe, and reliable tires on their cars",
+        "Learned that providing excellent customer service is crucial for the success of a business",
       ],
       location: "Parker, CO",
       logo: `${import.meta.env.BASE_URL}discount.jpg`,
