@@ -136,7 +136,6 @@ const Beyond = () => {
                   immersive audio experiences that complement the game's
                   atmosphere and interactions.
                 </li>
-                {/* Include additional technical details as needed */}
               </ul>
             </div>
           </div>
