@@ -113,6 +113,7 @@ export default function Navbar() {
                     </Link>
                   </NavigationMenuLink>
                 </li>
+                <ListItem key="1" title="test" href={`${import.meta.env.BASE_URL}projects/time-escapement`}></ListItem>
                 {projectComponents.map((projectComponent) => (
                   <ListItem
                     key={projectComponent.title}
