@@ -17,11 +17,6 @@ const projectComponents: {
   description: string;
 }[] = [
   {
-    title: "Beyond 2D Pixel Game",
-    href: `${import.meta.env.BASE_URL}projects/beyond`,
-    description: "A 2D pixel space game made in the Unity game engine.",
-  },
-  {
     title: "Speech-to-text translator",
     href: `${import.meta.env.BASE_URL}projects/speech-to-text`,
     description: "A real-time deep learning-based speech-to-text translator.",
@@ -95,6 +90,25 @@ export default function Navbar() {
                       <p className="text-sm leading-tight text-muted-foreground">
                         A more trustworthy, reliable, and secure webapp for
                         collaboration and communication.
+                      </p>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+                <li className="row-span-3">
+                  <NavigationMenuLink asChild>
+                    <Link
+                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                      to={`${import.meta.env.BASE_URL}projects/beyond`}
+                    >
+                      <img
+                        className="h-14 w-14"
+                        src={`${import.meta.env.BASE_URL}beyond_logo.svg`}
+                      />
+                      <div className="mb-2 mt-4 text-lg font-medium">
+                        Beyond
+                      </div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        A 2D pixel adventure videogame made in the Unity game engine.
                       </p>
                     </Link>
                   </NavigationMenuLink>
