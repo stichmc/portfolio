@@ -37,8 +37,7 @@ const Beyond = () => {
             <p className="text-gray-700 mb-8">
               Beyond is a 2D pixel game passion project that I have been working
               on for a long time. It's inspiration stems from my love of space
-              games and my passion for adventure games that really make you feel
-              powerful yet relatable.
+              style games and my passion for playing adventure games.
             </p>
             <div className="mb-8 block items-center md:flex">
               <div className="md:w-1/2 pr-8">
@@ -52,13 +51,14 @@ const Beyond = () => {
                 <h2 className="text-2xl font-bold mb-4">Pixel Art Aspect</h2>
                 <p className="text-gray-700">
                   A significant focus during development has been on the pixel
-                  art aspect of Project Beyond. Meticulously crafted using tools
-                  like Aseprite and Pyxel Edit, the game boasts visually
-                  stunning and detailed pixel art assets. The dedication extends
-                  to the creation of reusable scenes and props, ensuring a
-                  cohesive and visually appealing environment throughout every
-                  facet of the game.
+                  art aspect of Beyond. Meticulously crafted using tools like
+                  Aseprite and Pyxel Edit, the game boasts visually stunning and
+                  detailed pixel art assets. The dedication extends to the
+                  creation of reusable scenes and props, ensuring a cohesive and
+                  visually appealing environment throughout every facet of the
+                  game.
                 </p>
+                <br />
                 <p className="text-gray-700">
                   The integration of Unity's tilemap system allows for efficient
                   placement and arrangement of pixel art assets, facilitating
@@ -72,22 +72,19 @@ const Beyond = () => {
             <div className="key-features-section mb-8">
               <h2 className="text-2xl font-bold mb-4">The Story</h2>
               <p className="text-gray-700">
-                The story of BEYOND revolves around a lone space explorer who
+                The story of Beyond revolves around a lone space explorer who
                 discovers an ancient spacecraft capable of traversing the
                 vastness of space. The spacecraft leads the explorer to an
                 enigmatic ancient temple hidden within a distant nebula, where
                 they unravel the secrets of the universe. The story is set in
-                the future where the United Galactic Accord (UGA) teeters on the
-                edge of collapse due to a mysterious cosmic anomaly known as the
-                Eventide Abyss. The Abyss is a malevolent force relentlessly
-                consuming entire star systems, and the explorer's goal is to
-                seek out the scattered divine essence fragments and use it to
-                drive the Abyss back BEYOND the reaches of space-time. The story
+                the future where the universe teeters on the edge of collapse
+                due to a mysterious cosmic anomaly known as the Eventide Abyss.
+                The Abyss is a malevolent force relentlessly consuming entire
+                star systems, and the explorer's goal is to stop it. The story
                 is filled with diverse civilizations, physical challenges of
                 space, moral quandaries, and a final confrontation beyond the
-                heart of the cosmic turmoil. The fate of the United Galactic
-                Accord and the universe itself hangs in the balance as the lone
-                explorer ventures BEYOND.
+                heart of the cosmic turmoil. The fate of the universe hangs in
+                the balance as the lone explorer ventures Beyond.
               </p>
             </div>
 
