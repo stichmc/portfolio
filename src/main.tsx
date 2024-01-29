@@ -30,7 +30,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path={`${import.meta.env.BASE_URL}work-experience`} element={<WorkExperience />} />
 
         <Route path={`${import.meta.env.BASE_URL}projects/synergy`} element={<Synergy />} />
-        <Route path={`${import.meta.env.BASE_URL}projects/beyond-engine`} element={<Beyond />} />
+        <Route path={`${import.meta.env.BASE_URL}projects/beyond`} element={<Beyond />} />
         <Route path={`${import.meta.env.BASE_URL}projects/wheel-wizard`} element={<WheelWizard />} />
         <Route path={`${import.meta.env.BASE_URL}projects/speech-to-text`} element={<SpeechText />} />
         <Route path={`${import.meta.env.BASE_URL}projects/time-escapement`} element={<TimeEscapement />} />

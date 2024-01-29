@@ -34,7 +34,6 @@ const Home = () => {
         <a
           href={`${import.meta.env.BASE_URL}Michael_Stich_Resume.pdf`}
           target="_blank"
-          className="flex items-center space-x-4 mb-4"
         >
           <Button
             // onClick={handleDownload}

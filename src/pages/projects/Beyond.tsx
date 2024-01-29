@@ -33,80 +33,111 @@ const Beyond = () => {
         <div className="grid gap-8">
           <div className="synergy-container p-8 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold mb-4">
-              Guassing Splotting Graphics
+              Bringing fun back to adventure games
             </h1>
             <p className="text-gray-700 mb-8">
-              Synergy is a social media chat app that aims to improve online
-              communication by providing a platform that's confidential,
-              transparent, and user-friendly. Synergy encapsulates all the great
-              features of other messaging apps and combines them into a platform
-              that puts users first. The app's design focuses on creating a
-              strong technical foundation and ensuring an intuitive user
-              experience that simplifies messaging. By doing so, Synergy offers
-              a concise and easy-to-understand platform that enables users to
-              communicate effectively and securely.
+              Beyond is a 2D pixel game passion project that I have been working
+              on for a long time. It's inspiration stems from my love of space
+              games and my passion for adventure games that really make you feel
+              powerful yet relatable.
             </p>
-            <div className="feature-section mb-8">
-              <h2 className="text-2xl font-bold mb-4">Key Features:</h2>
-              <ul className="list-disc">
-                <li className="text-gray-700">
-                  <strong>Confidential Communication:</strong> Synergy places a
-                  premium on user privacy through the implementation of
-                  end-to-end encryption, ensuring the confidentiality of all
-                  communications. This pivotal feature creates a secure
-                  environment for the exchange of sensitive information without
-                  compromising data integrity.
-                </li>
-                <li className="text-gray-700">
-                  <strong>Transparent Operations:</strong> Synergy's design
-                  emphasizes transparency, offering comprehensive audit logs for
-                  users to track and review all activities within the platform.
-                  This feature fosters accountability and trust, making Synergy
-                  an ideal choice for professional and collaborative
-                  environments.
-                </li>
-                <li className="text-gray-700">
-                  <strong>Feature-Rich Interface:</strong> Boasting a diverse
-                  set of features, Synergy enhances communication and
-                  collaboration. From multimedia sharing to real-time messaging,
-                  voice chat, and more, the platform caters to various user
-                  needs. Customizable user profiles and advanced notification
-                  settings contribute to a personalized and efficient user
-                  experience.
-                </li>
-                <li className="text-gray-700">
-                  <strong>User-Friendly Design:</strong> Synergy's user
-                  interface is crafted for simplicity and intuitiveness. A clean
-                  and responsive layout ensures that users can navigate the
-                  application effortlessly, making it accessible to individuals
-                  with varying levels of technical expertise.
-                </li>
-              </ul>
+            <div className=" feature-section mb-8 block items-center md:flex lg:flex xl:flex">
+              <div className="w-1/2 pr-8">
+                -
+                <img
+                  src={`${import.meta.env.BASE_URL}beyond-title.jpg`}
+                  alt="Synergy Feature"
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="w-1/2">
+                <h2 className="text-2xl font-bold mb-4">Pixel Art Aspect</h2>
+                <p className="text-gray-700">
+                  A significant focus during development has been on the pixel
+                  art aspect of Project Beyond. Meticulously crafted using tools
+                  like Aseprite and Pyxel Edit, the game boasts visually
+                  stunning and detailed pixel art assets. The dedication extends
+                  to the creation of reusable scenes and props, ensuring a
+                  cohesive and visually appealing environment throughout every
+                  facet of the game.
+                </p>
+                <p className="text-gray-700">
+                  The integration of Unity's tilemap system allows for efficient
+                  placement and arrangement of pixel art assets, facilitating
+                  the seamless construction of diverse and engaging game worlds.
+                  Dynamic lighting and a custom animation system further enhance
+                  the visual charm, creating an immersive experience for players
+                  as they explore the captivating pixelated landscapes.
+                </p>
+              </div>
+            </div>
+            <div className="key-features-section mb-8">
+              <h2 className="text-2xl font-bold mb-4">The Story</h2>
+              <p className="text-gray-700">
+                The story of BEYOND revolves around a lone space explorer who
+                discovers an ancient spacecraft capable of traversing the
+                vastness of space. The spacecraft leads the explorer to an
+                enigmatic ancient temple hidden within a distant nebula, where
+                they unravel the secrets of the universe. The story is set in
+                the future where the United Galactic Accord (UGA) teeters on the
+                edge of collapse due to a mysterious cosmic anomaly known as the
+                Eventide Abyss. The Abyss is a malevolent force relentlessly
+                consuming entire star systems, and the explorer's goal is to
+                seek out the scattered divine essence fragments and use it to
+                drive the Abyss back BEYOND the reaches of space-time. The story
+                is filled with diverse civilizations, physical challenges of
+                space, moral quandaries, and a final confrontation beyond the
+                heart of the cosmic turmoil. The fate of the United Galactic
+                Accord and the universe itself hangs in the balance as the lone
+                explorer ventures BEYOND.
+              </p>
             </div>
 
             <div className="technical-details-section mb-8">
               <h2 className="text-2xl font-bold mb-4">Technical Details:</h2>
               <ul className="list-disc">
                 <li className="text-gray-700">
-                  <strong>Node.js Express Backend:</strong> The backend of
-                  Synergy is powered by Node.js, leveraging the Express
-                  framework for scalability and high performance. This
-                  architecture enables Synergy to handle a large volume of
-                  concurrent users seamlessly.
+                  <strong>Unity Game Engine:</strong> Project Beyond is
+                  developed using the Unity game engine, providing a robust and
+                  versatile platform for 2D game development.
                 </li>
                 <li className="text-gray-700">
-                  <strong>PostgreSQL Database:</strong> Synergy relies on a
-                  PostgreSQL SQL database for robust data management. This
-                  choice provides the application with the necessary flexibility
-                  and reliability to store and retrieve user data efficiently.
+                  <strong>Pixel Art Tools:</strong> The game's pixel art is
+                  crafted using industry-leading tools such as Aseprite and
+                  Pyxel Edit, ensuring high-quality and visually appealing
+                  sprites, scenes, and props.
                 </li>
                 <li className="text-gray-700">
-                  <strong>React Frontend with Vite:</strong> The frontend of
-                  Synergy is built using React, a popular JavaScript library for
-                  building user interfaces. Vite serves as the frontend build
-                  tool, enhancing development speed and overall performance for
-                  a responsive and engaging user interface.
+                  <strong>Tilemap Integration:</strong> Utilizing Unity's
+                  built-in tilemap system for efficient level design and
+                  rendering, optimizing performance and streamlining the
+                  creation of intricate game environments.
                 </li>
+                <li className="text-gray-700">
+                  <strong>Dynamic Lighting:</strong> Implementing a dynamic
+                  lighting system, enhancing the visual experience by creating
+                  realistic shadows and illumination effects within the pixel
+                  art world.
+                </li>
+                <li className="text-gray-700">
+                  <strong>Custom Animation System:</strong> Designing and
+                  implementing a custom animation system to bring characters and
+                  in-game elements to life, ensuring smooth and engaging
+                  movement throughout the gameplay.
+                </li>
+                <li className="text-gray-700">
+                  <strong>Asset Bundling:</strong> Employing Unity's asset
+                  bundling techniques to optimize resource loading, reducing
+                  load times and ensuring a seamless gaming experience for
+                  players.
+                </li>
+                <li className="text-gray-700">
+                  <strong>Sound Design with FMOD:</strong> Integrating the FMOD
+                  audio engine for advanced sound design, enabling dynamic and
+                  immersive audio experiences that complement the game's
+                  atmosphere and interactions.
+                </li>
+                {/* Include additional technical details as needed */}
               </ul>
             </div>
           </div>

@@ -17,9 +17,9 @@ const projectComponents: {
   description: string;
 }[] = [
   {
-    title: "Beyond Game Engine",
-    href: `${import.meta.env.BASE_URL}projects/beyond-engine`,
-    description: "A 3D video game engine utilizing the Vulkan graphics API.",
+    title: "Beyond 2D Pixel Game",
+    href: `${import.meta.env.BASE_URL}projects/beyond`,
+    description: "A 2D pixel space game made in the Unity game engine.",
   },
   {
     title: "Speech-to-text translator",
