@@ -42,7 +42,6 @@ const Beyond = () => {
             </p>
             <div className=" feature-section mb-8 block items-center md:flex lg:flex xl:flex">
               <div className="sm:w-1/2 pr-8">
-                -
                 <img
                   src={`${import.meta.env.BASE_URL}beyond-title.jpg`}
                   alt="Synergy Feature"
