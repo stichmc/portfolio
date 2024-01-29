@@ -16,27 +16,27 @@ const projectComponents: {
   href: string;
   description: string;
 }[] = [
-  {
-    title: "Speech-to-text translator",
-    href: `${import.meta.env.BASE_URL}projects/speech-to-text`,
-    description: "A real-time deep learning-based speech-to-text translator.",
-  },
-  {
-    title: "Time Escapement",
-    href: `${import.meta.env.BASE_URL}projects/time-escapement`,
-    description: "A 17th-century time escapement clock.",
-  },
-  {
-    title: "C++ Console Based Game",
-    href: `${import.meta.env.BASE_URL}projects/doom`,
-    description: "A 2D video game entirely in C++, inspired by DOOM.",
-  },
-  {
-    title: "Wheel Wizard",
-    href: `${import.meta.env.BASE_URL}projects/wheel-wizard`,
-    description:
-      "A used-car website for browsing, posting, and purchasing used cars.",
-  },
+  // {
+  //   title: "Speech-to-text translator",
+  //   href: `${import.meta.env.BASE_URL}projects/speech-to-text`,
+  //   description: "A real-time deep learning-based speech-to-text translator.",
+  // },
+  // {
+  //   title: "Time Escapement",
+  //   href: `${import.meta.env.BASE_URL}projects/time-escapement`,
+  //   description: "A 17th-century time escapement clock.",
+  // },
+  // {
+  //   title: "C++ Console Based Game",
+  //   href: `${import.meta.env.BASE_URL}projects/doom`,
+  //   description: "A 2D video game entirely in C++, inspired by DOOM.",
+  // },
+  // {
+  //   title: "Wheel Wizard",
+  //   href: `${import.meta.env.BASE_URL}projects/wheel-wizard`,
+  //   description:
+  //     "A used-car website for browsing, posting, and purchasing used cars.",
+  // },
 ];
 
 export default function Navbar() {
@@ -108,13 +108,69 @@ export default function Navbar() {
                         Beyond
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
-                        A 2D pixel adventure videogame made in the Unity game engine.
+                        A 2D pixel adventure videogame made in the Unity game
+                        engine.
                       </p>
                     </Link>
                   </NavigationMenuLink>
                 </li>
-                <ListItem key="1" title="test" href={`${import.meta.env.BASE_URL}projects/time-escapement`}></ListItem>
-                {projectComponents.map((projectComponent) => (
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      to={`${import.meta.env.BASE_URL}projects/speech-to-text`}
+                    >
+                      <div className="font-medium">
+                        Speech-to-text Translator
+                      </div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        A real-time deep learning-based speech-to-text
+                        translator.
+                      </p>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      to={`${import.meta.env.BASE_URL}projects/time-escapement`}
+                    >
+                      <div className="font-medium">Time Escapement</div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        A 17th-century time escapement clock.
+                      </p>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      to={`${import.meta.env.BASE_URL}projects/doom`}
+                    >
+                      <div className="font-medium">C++ Console Based Game</div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        A 2D video game entirely in C++, inspired by DOOM.
+                      </p>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      to={`${import.meta.env.BASE_URL}projects/wheel-wizard`}
+                    >
+                      <div className="font-medium">Wheel Wizard</div>
+                      <p className="text-sm leading-tight text-muted-foreground">
+                        A used-car website for browsing, posting, and purchasing
+                        used cars.
+                      </p>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+                {/* {projectComponents.map((projectComponent) => (
                   <ListItem
                     key={projectComponent.title}
                     title={projectComponent.title}
@@ -122,7 +178,7 @@ export default function Navbar() {
                   >
                     {projectComponent.description}
                   </ListItem>
-                ))}
+                ))} */}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
