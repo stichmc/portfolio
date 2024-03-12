@@ -15,8 +15,8 @@ const WorkExperience = () => {
       startDate: "June 2023",
       endDate: "August 2023",
       responsibilities: [
-        "Created a web-based graphical user interface to significantly aid in the development of a prototype lunar power grid infrastructure",
-        "Developed features in the GUI that control and display data from the inverter module of the prototype",
+        "Created a graphical user interface using React to efficiently manage and control a prototype lunar power grid, which resulted in a substantial reduction of the prototype's total development time",
+        "Designed, modeled, and 3D printed essential components for the prototype, ensuring precise fit and functionality, which expedited the prototype's assembly process",
         "Implemented a new fast frequency measurement algorithm in VHDL for the prototype’s FPGA clock",
       ],
       location: "Cleveland, Ohio",
@@ -29,10 +29,10 @@ const WorkExperience = () => {
       startDate: "January 2023",
       endDate: "May 2023",
       responsibilities: [
-        "Refactored the official NASA Numerical Propulsion System Simulation (NPSS) Power System Library resulting in crucial performance and reliability improvements",
-        "Developed unit tests for every electrical component in the NPSS Power System Library",
-        "Documented all changes and performance improvements to the NPSS Library during the refactor",
-        "Developed a GitHub self-hosted runner that can automate any NPSS development project",
+        "Refactored the official NASA Numerical Propulsion System Simulation (NPSS) Power System Library, resulting in significant performance and reliability enhancements crucial to the library’s functionality",
+        "Engineered new electrical components into the library, ensuring precise simulation of their intended functions",
+        "Created and implemented unit tests for all electrical components within the library, ensuring robustness and stability of the software",
+        "Designed and deployed a GitHub self-hosted runner capable of automating NPSS development projects, streamlining workflows and enhancing productivity for development teams",
       ],
       location: "Remote",
       logo: `${import.meta.env.BASE_URL}nasa.svg`,
@@ -103,10 +103,7 @@ const WorkExperience = () => {
       <div className="text-black p-8 rounded-md shadow-lg max-w-4xl">
         <h1 className="text-4xl font-bold mb-6">Work Experience</h1>
         {workExperienceData.map((job) => (
-          <div
-            key={job.id}
-            className="flex items-center border border-black p-4 rounded mb-4"
-          >
+          <div key={job.id} className="flex items-center border border-black p-4 rounded mb-4">
             <div className="hidden sm:block flex-shrink-0 w-16 h-16 mr-4">
               <img
                 src={job.logo}
