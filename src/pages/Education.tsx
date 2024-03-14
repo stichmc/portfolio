@@ -41,7 +41,7 @@ const Education = () => {
             <div key={edu.id} className="border border-black p-4 rounded">
               <h2 className="text-xl font-bold">{edu.institution}</h2>
               <p className="text-md font-bold">{`${edu.degree} in ${edu.fieldOfStudy}`}</p>
-              {/* <p className="text-sm">{`Expected Graduation: ${edu.date}`}</p> */}
+              <p className="text-sm">{`Expected Graduation: ${edu.date}`}</p>
               <p className="text-sm mt-4">{edu.description}</p>
             </div>
           ))}
