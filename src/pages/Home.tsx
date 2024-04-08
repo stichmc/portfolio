@@ -44,12 +44,12 @@ const Home = () => {
         </a>
       </div>
 
-      <div className="ml-12 hidden xl:block">
+      {/* <div className="ml-12 hidden xl:block">
         <img
           src={`${import.meta.env.BASE_URL}miguel.jpg`}
           className="h-64 w-64 rounded-full shadow-2xl"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
