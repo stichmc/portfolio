@@ -37,7 +37,6 @@ const Footer = () => {
         content={"Michael's LinkedIn"}
         id="linkedin-tooltip"
         className="tooltip absolute top-0 transform -translate-x-[8%]"
-        delayShow={500}
       />
 
       <Tooltip
@@ -45,7 +44,6 @@ const Footer = () => {
         content={"Michael's GitHub"}
         id="github-tooltip"
         className="tooltip absolute transform -translate-x-[9%] -translate-y-[10%]"
-        delayShow={500}
       />
 
       <Tooltip
@@ -53,7 +51,6 @@ const Footer = () => {
         content={"Michael's Stack Overflow"}
         id="stack-tooltip"
         className="tooltip absolute top-0 transform -translate-x-[8%]"
-        delayShow={500}
       />
 
       <Tooltip
@@ -61,7 +58,6 @@ const Footer = () => {
         content={"mcstich@outlook.com"}
         id="email-tooltip"
         className="tooltip absolute top-0 transform -translate-x-[8%]"
-        delayShow={500}
       />
     </div>
   );
