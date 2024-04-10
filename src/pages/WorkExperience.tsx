@@ -1,3 +1,9 @@
+import nasaIcon from "@/assets/work_experience/nasa.svg";
+import rnlIcon from "@/assets/work_experience/rnl.png";
+import upsIcon from "@/assets/work_experience/ups.png";
+import johnsonIcon from "@/assets/work_experience/johnson.jpg";
+import discountIcon from "@/assets/work_experience/discount.jpg";
+
 const workExperienceData = [
   {
     id: 6,
@@ -11,7 +17,7 @@ const workExperienceData = [
       "Implemented a new fast frequency measurement algorithm in VHDL for the prototype’s FPGA clock",
     ],
     location: "Cleveland, Ohio",
-    logo: `${import.meta.env.BASE_URL}nasa.svg`,
+    logo: nasaIcon,
   },
   {
     id: 5,
@@ -26,7 +32,7 @@ const workExperienceData = [
       "Designed and deployed a GitHub self-hosted runner capable of automating NPSS development projects, streamlining workflows and enhancing productivity for development teams",
     ],
     location: "Remote",
-    logo: `${import.meta.env.BASE_URL}nasa.svg`,
+    logo: nasaIcon,
   },
   {
     id: 4,
@@ -40,7 +46,7 @@ const workExperienceData = [
       "Learned to spark amazing and fruitful conversations with strangers",
     ],
     location: "Boulder, CO",
-    logo: `${import.meta.env.BASE_URL}rnl.png`,
+    logo: rnlIcon,
   },
   {
     id: 3,
@@ -54,7 +60,7 @@ const workExperienceData = [
       "Ensured accurate and timely deliveries by strategizing which mail trucks would be loaded",
     ],
     location: "Glenwood Springs, CO",
-    logo: `${import.meta.env.BASE_URL}ups.png`,
+    logo: upsIcon,
   },
   {
     id: 2,
@@ -68,7 +74,7 @@ const workExperienceData = [
       "Learned the value of hard work through physically demanding tasks that lasted 13+ hours",
     ],
     location: "Parker, CO",
-    logo: `${import.meta.env.BASE_URL}johnson.jpg`,
+    logo: johnsonIcon,
   },
   {
     id: 1,
@@ -82,7 +88,7 @@ const workExperienceData = [
       "Learned that providing excellent customer service is crucial for the success of a business",
     ],
     location: "Parker, CO",
-    logo: `${import.meta.env.BASE_URL}discount.jpg`,
+    logo: discountIcon,
   },
 ];
 
@@ -92,12 +98,8 @@ const WorkExperience = () => {
       <h1 className="text-4xl font-bold mb-6">Work Experience</h1>
       {workExperienceData.map((job) => (
         <div key={job.id} className="flex items-center border-2 border-black p-4 rounded-2xl mb-4">
-          <div className="hidden sm:block flex-shrink-0 w-16 h-16 mr-4">
-            <img
-              src={job.logo}
-              className="w-full h-full object-contain rounded-full mt-[-2]"
-              alt={`${job.company} Logo`}
-            />
+          <div className="hidden sm:block flex-shrink-0 w-32 h-32 p-2 mr-4">
+            <img src={job.logo} className="w-full h-full object-contain mt-[-2]" alt={`${job.company} Logo`} />
           </div>
           <div>
             <h2 className="text-xl font-bold">{job.company}</h2>

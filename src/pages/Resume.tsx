@@ -2,7 +2,7 @@ import profileIcon from "@/assets/resume/profile.png";
 
 const Resume = () => {
   return (
-    <div className="flex flex-row md:space-x-8 w-full h-[36vh] items-center justify-center">
+    <div className="flex flex-row lg:space-x-8 w-full h-[36vh] items-center justify-center">
       <div className="lg:flex justify-center items-center rounded-full shadow-xl overflow-hidden w-1/3 min-w-64 hidden bg-white">
         <img src={profileIcon} />
       </div>
