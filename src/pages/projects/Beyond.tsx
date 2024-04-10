@@ -65,7 +65,7 @@ const Beyond = () => {
 
                 <div>
                   <h2 className="text-2xl font-bold mb-4">Technical Details:</h2>
-                  <ul>
+                  <ul className="list-disc">
                     <li className="text-sm sm:text-lg">
                       <strong>Unity Game Engine:</strong> Project Beyond is developed using the Unity game engine,
                       providing a robust and versatile platform for 2D game development.

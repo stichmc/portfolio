@@ -38,7 +38,7 @@ const Anello = () => {
                   </div>
 
                   <div className="md:w-3/4 mt-4 sm:mt-0">
-                    <h2 className="text-2xl font-bold mb-4">Key Features:</h2>
+                    <h1 className="text-xl sm:text-3xl font-bold mb-4">Key Features:</h1>
                     <ul className="text-sm sm:text-lg">
                       <li>
                         <strong>Confidential Communication:</strong> Anello places a premium on user privacy through the
@@ -68,8 +68,8 @@ const Anello = () => {
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold mb-4">Technical Details:</h2>
-                  <ul>
+                  <h1 className="text-xl sm:text-3xl font-bold mb-4">Technical Details:</h1>
+                  <ul className="list-disc">
                     <li className="text-sm sm:text-lg">
                       <strong>Node.js Express Backend:</strong> The backend of Anello is powered by Node.js, leveraging
                       the Express framework for scalability and high performance. This architecture enables Anello to
