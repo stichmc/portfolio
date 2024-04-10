@@ -71,7 +71,7 @@ const workExperienceData = [
     responsibilities: [
       "Safely packed, moved, and stored customer’s property",
       "Developed perseverance and critical thinking under pressure",
-      "Learned the value of hard work through physically demanding tasks that lasted 13+ hours",
+      "Learned the value of hard work through physically demanding tasks",
     ],
     location: "Parker, CO",
     logo: johnsonIcon,
@@ -102,12 +102,12 @@ const WorkExperience = () => {
             <img src={job.logo} className="w-full h-full object-contain mt-[-2]" alt={`${job.company} Logo`} />
           </div>
           <div>
-            <h2 className="text-xl font-bold">{job.company}</h2>
-            <p className="text-md font-bold">{`${job.position}`}</p>
-            <p className="text-sm">{`${job.startDate} - ${job.endDate} | ${job.location}`}</p>
+            <h2 className="text-2xl font-bold">{job.company}</h2>
+            <p className="text-lg font-bold">{`${job.position}`}</p>
+            <p className="font-semibold">{`${job.startDate} - ${job.endDate} | ${job.location}`}</p>
             <ul className="list-disc ml-6 mt-2">
               {job.responsibilities.map((responsibility, index) => (
-                <li key={index} className="text-sm">
+                <li key={index} className="font-semibold">
                   {responsibility}
                 </li>
               ))}
