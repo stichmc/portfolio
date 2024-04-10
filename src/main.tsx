@@ -25,8 +25,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
         <Route path="*" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
         <Route path={`${import.meta.env.BASE_URL}home`} element={<Home />} />
-        <Route path={`${import.meta.env.BASE_URL}education`} element={<Education />} />
-        <Route path={`${import.meta.env.BASE_URL}work-experience`} element={<WorkExperience />} />
 
         <Route path={`${import.meta.env.BASE_URL}projects/synergy`} element={<Synergy />} />
         <Route path={`${import.meta.env.BASE_URL}projects/beyond`} element={<Beyond />} />
@@ -35,7 +33,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path={`${import.meta.env.BASE_URL}projects/time-escapement`} element={<TimeEscapement />} />
         <Route path={`${import.meta.env.BASE_URL}projects/doom`} element={<Doom />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

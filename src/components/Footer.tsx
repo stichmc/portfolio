@@ -6,7 +6,7 @@ import mailIcon from "@/assets/footer/mail.svg";
 
 const Footer = () => {
   return (
-    <div className="fixed bottom-0 w-full bg-black p-4 flex items-center justify-center space-x-4">
+    <div className="fixed bottom-0 w-full bg-black p-4 flex items-center justify-center space-x-4 bg-opacity-80">
       <Link to="https://www.linkedin.com/in/mcstich?trk=profile-badge" target="_blank">
         <img src={linkedInIcon} className="h-14 w-14 transition-transform transform hover:scale-110" alt="LinkedIn" />
       </Link>

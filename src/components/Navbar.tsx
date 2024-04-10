@@ -12,15 +12,17 @@ import {
 import anelloLogo from "@/assets/anello_logo.svg";
 
 interface Props {
-  isHome: boolean;
+  isHome?: boolean;
+  isEducation: boolean;
+  isProjects: boolean;
 }
 
-const Navbar = ({ isHome }: Props) => {
+const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
   return (
-    <div className="flex justify-center items-center bg-gray-200">
-      <NavigationMenu className=" p-4">
-        <NavigationMenuList className="space-x-4 p-2 bg-white rounded-full">
-          <NavigationMenuItem className={isHome ? "outline-dotted rounded-full" : ""}>
+    <div className="flex justify-center items-center bg-gray-200 h-[5vh]">
+      <NavigationMenu className=" fixed top-0 p-4">
+        <NavigationMenuList className="space-x-4 p-2 bg-gray-300 rounded-full">
+          <NavigationMenuItem className={isHome ? "outline rounded-full" : ""}>
             <Link to={`${import.meta.env.BASE_URL}home`}>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 <p className="text-lg font-bold">Home</p>
@@ -28,7 +30,15 @@ const Navbar = ({ isHome }: Props) => {
             </Link>
           </NavigationMenuItem>
 
-          <NavigationMenuItem>
+          <NavigationMenuItem className={isEducation ? "outline rounded-full" : ""}>
+            <Link to={`${import.meta.env.BASE_URL}eduction`}>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <p className="text-lg font-bold">Eduction</p>
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem className={isProjects ? "outline rounded-full" : ""}>
             <NavigationMenuTrigger className="text-lg font-bold">Projects</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-2 p-2 w-[280px] sm:w-[500px] lg:w-[600px] sm:grid-cols-[.75fr_1fr]">
