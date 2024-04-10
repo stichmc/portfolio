@@ -21,7 +21,6 @@ import Doom from "./pages/projects/Doom.tsx";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
         <Route path="*" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
