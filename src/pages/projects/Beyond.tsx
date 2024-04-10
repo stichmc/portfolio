@@ -54,13 +54,11 @@ const Beyond = () => {
                   <h2 className="text-2xl font-bold mb-4">The Story</h2>
                   <p className="text-sm sm:text-lg text-gray-700">
                     The story of Beyond revolves around a lone space explorer who discovers an ancient spacecraft
-                    capable of traversing the vastness of space. The spacecraft leads the explorer to an enigmatic
-                    ancient temple hidden within a distant nebula, where they unravel the secrets of the universe. The
-                    story is set in the future where the universe teeters on the edge of collapse due to a mysterious
-                    cosmic anomaly known as the Eventide Abyss. The Abyss is a malevolent force relentlessly consuming
-                    entire star systems, and the explorer's goal is to stop it. The story is filled with diverse
-                    civilizations, physical challenges of space, moral quandaries, and a final confrontation beyond the
-                    heart of the cosmic turmoil. The fate of the universe hangs in the balance as the lone explorer
+                    capable of traversing the vastness of space. The spacecraft leads the explorer to an ancient temple
+                    hidden within a distant nebula, that unravels the secrets of the origins of the universe. The story
+                    is set in the future where the universe teeters on the edge of collapse due to a mysterious cosmic
+                    anomaly. The anomaly is a malevolent force relentlessly consuming entire star systems, and the
+                    explorer's goal is to stop it. The fate of the universe hangs in the balance as the lone explorer
                     ventures Beyond.
                   </p>
                 </div>
