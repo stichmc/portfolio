@@ -25,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
         <Route path="*" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
         <Route path={`${import.meta.env.BASE_URL}home`} element={<Home />} />
+        <Route path={`${import.meta.env.BASE_URL}eduction`} element={<Education />} />
 
         <Route path={`${import.meta.env.BASE_URL}projects/synergy`} element={<Synergy />} />
         <Route path={`${import.meta.env.BASE_URL}projects/beyond`} element={<Beyond />} />
