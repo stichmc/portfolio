@@ -24,7 +24,7 @@ const Anello = () => {
 
               <div className="mt-6 sm:mt-0">
                 <h1 className="text-xl sm:text-3xl font-bold mb-4">Refining Online Communication</h1>
-                <p className="text-sm sm:text-xl  mb-8">
+                <p className="text-sm sm:text-xl mb-8">
                   Anello is a messaging webapp that aims to improve online communication by providing a platform that's
                   confidential, transparent, and user-friendly. Anello encapsulates all the great features of other
                   messaging apps and combines them into a platform that puts users first. The app's design focuses on
