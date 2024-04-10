@@ -23,7 +23,7 @@ const Beyond = () => {
 
               <div className="mt-6 sm:mt-0">
                 <h1 className="text-xl sm:text-3xl font-bold mb-4">Bringing fun back to adventure games</h1>
-                <p className="text-sm sm:text-xl text-gray-700 mb-8">
+                <p className="text-sm sm:text-xl mb-8">
                   Beyond is a 2D adventure game that I have been working on for a long time. Its inspiration stems from
                   my love of space-style games and my passion for playing adventure games. As I continue to develop it,
                   I aim to create an immersive experience that combines the excitement of space exploration with
@@ -35,14 +35,14 @@ const Beyond = () => {
                   </div>
                   <div className="md:w-3/4 mt-4 sm:mt-0">
                     <h2 className="text-2xl font-bold mb-4">Pixel Art Aspect</h2>
-                    <p className="text-sm sm:text-lg text-gray-700">
+                    <p className="text-sm sm:text-lg">
                       A significant focus during development has been on the pixel art aspect of Beyond. Meticulously
                       crafted using tools like Aseprite and Pyxel Edit, the game boasts visually stunning and detailed
                       pixel art assets. The dedication extends to the creation of reusable scenes and props, ensuring a
                       cohesive and visually appealing environment throughout every facet of the game.
                     </p>
                     <br />
-                    <p className="text-sm sm:text-lg text-gray-700">
+                    <p className="text-sm sm:text-lg">
                       The integration of Unity's tilemap system allows for efficient placement and arrangement of pixel
                       art assets, facilitating the seamless construction of diverse and engaging game worlds. Dynamic
                       lighting and a custom animation system further enhance the visual charm, creating an immersive
@@ -50,9 +50,9 @@ const Beyond = () => {
                     </p>
                   </div>
                 </div>
-                <div className="key-features-section mb-8">
+                <div className="mb-8">
                   <h2 className="text-2xl font-bold mb-4">The Story</h2>
-                  <p className="text-sm sm:text-lg text-gray-700">
+                  <p className="text-sm sm:text-lg">
                     The story of Beyond revolves around a lone space explorer who discovers an ancient spacecraft
                     capable of traversing the vastness of space. The spacecraft leads the explorer to an ancient temple
                     hidden within a distant nebula, that unravels the secrets of the origins of the universe. The story
@@ -63,37 +63,37 @@ const Beyond = () => {
                   </p>
                 </div>
 
-                <div className="technical-details-section">
+                <div>
                   <h2 className="text-2xl font-bold mb-4">Technical Details:</h2>
-                  <ul className="list-disc">
-                    <li className="text-sm sm:text-lg text-gray-700">
+                  <ul>
+                    <li className="text-sm sm:text-lg">
                       <strong>Unity Game Engine:</strong> Project Beyond is developed using the Unity game engine,
                       providing a robust and versatile platform for 2D game development.
                     </li>
-                    <li className="text-sm sm:text-lg text-gray-700">
+                    <li className="text-sm sm:text-lg">
                       <strong>Pixel Art Tools:</strong> The game's pixel art is crafted using industry-leading tools
                       such as Aseprite and Pyxel Edit, ensuring high-quality and visually appealing sprites, scenes, and
                       props.
                     </li>
-                    <li className="text-sm sm:text-lg text-gray-700">
+                    <li className="text-sm sm:text-lg">
                       <strong>Tilemap Integration:</strong> Utilizing Unity's built-in tilemap system for efficient
                       level design and rendering, optimizing performance and streamlining the creation of intricate game
                       environments.
                     </li>
-                    <li className="text-sm sm:text-lg text-gray-700">
+                    <li className="text-sm sm:text-lg">
                       <strong>Dynamic Lighting:</strong> Implementing a dynamic lighting system, enhancing the visual
                       experience by creating realistic shadows and illumination effects within the pixel art world.
                     </li>
-                    <li className="text-sm sm:text-lg text-gray-700">
+                    <li className="text-sm sm:text-lg">
                       <strong>Custom Animation System:</strong> Designing and implementing a custom animation system to
                       bring characters and in-game elements to life, ensuring smooth and engaging movement throughout
                       the gameplay.
                     </li>
-                    <li className="text-sm sm:text-lg text-gray-700">
+                    <li className="text-sm sm:text-lg">
                       <strong>Asset Bundling:</strong> Employing Unity's asset bundling techniques to optimize resource
                       loading, reducing load times and ensuring a seamless gaming experience for players.
                     </li>
-                    <li className="text-sm sm:text-lg text-gray-700">
+                    <li className="text-sm sm:text-lg">
                       <strong>Sound Design with FMOD:</strong> Integrating the FMOD audio engine for advanced sound
                       design, enabling dynamic and immersive audio experiences that complement the game's atmosphere and
                       interactions.
