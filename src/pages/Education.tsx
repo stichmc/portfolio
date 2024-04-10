@@ -23,8 +23,7 @@ const Education = () => {
                     capacity to tackle intricate challenges, foster innovation, and develop impactful solutions that
                     benefit society. The field's dynamic nature and the constant opportunities for learning and
                     contribution have deepened my passion for computer science. My coursework encompasses mastering
-                    algorithms, data structures, software engineering, and computer architecture, which has
-                    significantly improved my programming and problem-solving abilities.
+                    algorithms, data structures, software engineering, and computer architecture.
                   </p>
                 </div>
 
