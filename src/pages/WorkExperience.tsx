@@ -8,7 +8,7 @@ const workExperienceData = [
   {
     id: 6,
     position: "Full Stack Software Developer Intern",
-    company: "National Aeronautics and Space Administration (NASA)",
+    company: "National Aeronautics and Space Administration",
     startDate: "June 2023",
     endDate: "August 2023",
     responsibilities: [
@@ -22,7 +22,7 @@ const workExperienceData = [
   {
     id: 5,
     position: "NPSS Library Software Developer Intern",
-    company: "National Aeronautics and Space Administration (NASA)",
+    company: "National Aeronautics and Space Administration",
     startDate: "January 2023",
     endDate: "May 2023",
     responsibilities: [
@@ -94,20 +94,20 @@ const workExperienceData = [
 
 const WorkExperience = () => {
   return (
-    <div className="text-black p-8 rounded-2xl shadow-lg bg-white w-full">
-      <h1 className="text-4xl font-bold mb-6">Work Experience</h1>
+    <div className="text-black p-4 sm:p-8 rounded-2xl shadow-lg bg-white w-full">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-6">Work Experience</h1>
       {workExperienceData.map((job) => (
         <div key={job.id} className="flex items-center border-2 border-black p-4 rounded-2xl mb-4">
           <div className="hidden sm:block flex-shrink-0 w-32 h-32 p-2 mr-4">
             <img src={job.logo} className="w-full h-full object-contain mt-[-2]" alt={`${job.company} Logo`} />
           </div>
           <div>
-            <h2 className="text-2xl font-bold">{job.company}</h2>
-            <p className="text-lg font-bold">{`${job.position}`}</p>
-            <p className="font-semibold">{`${job.startDate} - ${job.endDate} | ${job.location}`}</p>
+            <h2 className="text-xl sm:text-2xl font-bold">{job.company}</h2>
+            <p className="text-md sm:text-lg font-bold">{`${job.position}`}</p>
+            <p className="text-sm sm:text-md font-semibold">{`${job.startDate} - ${job.endDate} | ${job.location}`}</p>
             <ul className="list-disc ml-6 mt-2">
               {job.responsibilities.map((responsibility, index) => (
-                <li key={index} className="font-semibold">
+                <li key={index} className="text-sm sm:text-md font-semibold">
                   {responsibility}
                 </li>
               ))}
