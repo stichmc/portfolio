@@ -39,7 +39,7 @@ const Anello = () => {
 
                   <div className="md:w-3/4 mt-4 sm:mt-0">
                     <h1 className="text-xl sm:text-3xl font-bold mb-4">Key Features:</h1>
-                    <ul className="text-sm sm:text-lg">
+                    <ul className="list-disc text-sm sm:text-lg">
                       <li>
                         <strong>Confidential Communication:</strong> Anello places a premium on user privacy through the
                         implementation of end-to-end encryption, ensuring the confidentiality of all communications.
