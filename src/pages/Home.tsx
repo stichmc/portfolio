@@ -11,7 +11,7 @@ const Home = () => {
       <div className="mb-20">
         <div className="bg-gray-200 lg:p-24 p-8">
           <FadeIn>
-            <div className="flex flex-col justify-start items-center h-full space-y-8 sm:space-y-20 mt-8 sm:mt-6">
+            <div className="flex flex-col justify-start items-center h-full space-y-8 sm:space-y-20 mt-2">
               <Resume />
               <WorkExperience />
             </div>

@@ -10,7 +10,7 @@ const Resume = () => {
       <div className="text-black p-8 rounded-2xl shadow-lg w-full bg-white h-full flex flex-col items-start justify-center">
         <h1 className="text-2xl sm:text-4xl font-bold mb-4">Hi, I'm Michael Stich!</h1>
         <h2 className="text-xl sm:text-3xl mb-4">
-          An ambitious software engineering student with over two years of hands-on experience in professional software
+          An ambitious computer science student with over two years of hands-on experience in professional software
           development.
         </h2>
 
