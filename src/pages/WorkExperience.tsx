@@ -104,10 +104,10 @@ const WorkExperience = () => {
           <div>
             <h2 className="text-xl sm:text-2xl font-bold">{job.company}</h2>
             <p className="text-md sm:text-lg font-bold">{`${job.position}`}</p>
-            <p className="text-sm sm:text-md font-semibold">{`${job.startDate} - ${job.endDate} | ${job.location}`}</p>
+            <p className="text-md sm:text-lg font-semibold">{`${job.startDate} - ${job.endDate} | ${job.location}`}</p>
             <ul className="list-disc ml-6 mt-2">
               {job.responsibilities.map((responsibility, index) => (
-                <li key={index} className="text-sm sm:text-md font-semibold">
+                <li key={index} className="text-md sm:text-xl font-semibold">
                   {responsibility}
                 </li>
               ))}
