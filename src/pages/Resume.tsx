@@ -15,7 +15,7 @@ const Resume = () => {
         </h2>
 
         <a href={`${import.meta.env.BASE_URL}Michael_Stich_Resume.pdf`} target="_blank">
-          <button className="bg-gray-950 text-white p-4 font-semibold rounded-full text-xl sm:text-3xl transition-transform transform hover:scale-105">
+          <button className="bg-gray-950 text-white p-3 font-semibold rounded-full text-lg sm:text-2xl transition-transform transform hover:scale-105">
             Download Resume
           </button>
         </a>

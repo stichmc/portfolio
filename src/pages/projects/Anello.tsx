@@ -16,8 +16,8 @@ const Anello = () => {
               <div className="flex justify-between items-center">
                 <h1 className="text-2xl sm:text-4xl font-bold mb-6">Project Anello</h1>
                 <Link to="https://chat.mcstich.com" target="_blank">
-                  <div className="w-36 h-36 transition-transform transform hover:scale-105 shadow-2xl rounded-full flex items-center justify-center">
-                    <img src={anelloLogo} className="w-28 p-4 mt-2" alt="Anello Logo" />
+                  <div className="w-28 h-28 sm:w-36 sm:h-36 transition-transform transform hover:scale-105 shadow-2xl rounded-full flex items-center justify-center">
+                    <img src={anelloLogo} className="w-24 sm:w-28 p-4 mt-2" alt="Anello Logo" />
                   </div>
                 </Link>
               </div>
