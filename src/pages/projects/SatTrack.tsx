@@ -17,7 +17,7 @@ const SatTrack = () => {
               <div className="flex justify-between items-center">
                 <h1 className="text-xl sm:text-4xl font-bold mb-6">HackCU 2024 24hr Project: Sat-track</h1>
                 <a href="https://github.com/stichmc/sat-track" target="blank">
-                  <div className="w-28 h-28 sm:w-36 sm:h-36 transition-transform transform hover:scale-105 shadow-2xl rounded-full flex items-center justify-center">
+                  <div className="w-24 h-24 sm:w-36 sm:h-36 transition-transform transform hover:scale-105 shadow-2xl rounded-full flex items-center justify-center">
                     <img src={satelliteIcon} className="w-24 sm:w-32 p-4 mt-2" alt="Sat-track Logo" />
                   </div>
                 </a>
