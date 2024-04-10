@@ -22,7 +22,7 @@ const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
   return (
     <div className="flex justify-center items-center bg-gray-200 h-[5vh]">
       <NavigationMenu className=" fixed top-0 p-4">
-        <NavigationMenuList className="space-x-4 p-2 bg-gray-300 rounded-full">
+        <NavigationMenuList className="space-x-4 p-2 bg-gray-300 rounded-full bg-opacity-80">
           <NavigationMenuItem className={isHome ? "outline rounded-full" : ""}>
             <Link to={`${import.meta.env.BASE_URL}home`}>
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
