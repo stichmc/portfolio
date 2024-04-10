@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import anelloLogo from "@/assets/anello_logo.svg";
+import beyondIcon from "@/assets/projects/beyond_logo.svg";
 
 interface Props {
   isHome?: boolean;
@@ -62,7 +63,7 @@ const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
                       className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
                       to={`${import.meta.env.BASE_URL}projects/beyond`}
                     >
-                      <img className="h-14 w-14" src={`${import.meta.env.BASE_URL}beyond_logo.svg`} />
+                      <img className="h-14 w-14" src={beyondIcon} />
                       <div className="mb-2 mt-4 text-lg font-medium">Beyond</div>
                       <p className="text-sm leading-tight text-muted-foreground">
                         A 2D pixel adventure video game made in the Unity
