@@ -28,6 +28,7 @@ const SatTrack = () => {
                   <div className="mb-8 block items-center md:flex">
                     <img src={satTrackPicture} alt="SatTrack" className="rounded-2xl" />
                   </div>
+                  
                   <div>
                     <h1 className="text-xl sm:text-3xl font-bold mb-4">Your go-to satellite tracking website!</h1>
                     <p className="text-sm sm:text-xl mb-8">
