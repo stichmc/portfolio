@@ -3,14 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
-// Components
-import Navbar from "./components/Navbar.tsx";
-import Footer from "./components/Footer.tsx";
-
 // Pages
 import Home from "./pages/Home.tsx";
 import Education from "./pages/Education.tsx";
-import WorkExperience from "./pages/WorkExperience.tsx";
 import Anello from "./pages/projects/Anello.tsx";
 import Beyond from "./pages/projects/Beyond.tsx";
 import SatTrack from "./pages/projects/SatTrack.tsx";
