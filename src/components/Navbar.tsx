@@ -58,7 +58,7 @@ const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
                     <img className="h-14 w-14" src={beyondIcon} />
                     <div className="mb-2 mt-4 text-lg font-medium">Beyond</div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      A 2D pixel adventure video game made in the Unity
+                      A 2D pixel adventure videogame made in Unity
                     </p>
                   </Link>
                 </li>
@@ -69,7 +69,7 @@ const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
                   >
                     <div className="font-medium">HackCU 2024 Sat-Track</div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      A real-time satellite tracker with a WebGL model of Earth
+                      A real-time satellite telemetry tracker
                     </p>
                   </Link>
                 </li>
@@ -80,7 +80,7 @@ const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
                   >
                     <div className="font-medium">Speech-to-text Translator</div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      A real-time deep learning-based speech-to-text translator
+                      A deep learning-based speech-to-text translator
                     </p>
                   </Link>
                 </li>
@@ -100,7 +100,7 @@ const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
                   >
                     <div className="font-medium">C++ Console Based Game</div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      A 2D video game inspired by Space Invaders and DOOM
+                      A 2D videogame inspired by the Space Invaders and DOOM games
                     </p>
                   </Link>
                 </li>
