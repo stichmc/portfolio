@@ -97,7 +97,7 @@ const WorkExperience = () => {
     <div className="text-black p-4 sm:p-8 rounded-2xl shadow-lg bg-white w-full">
       <h1 className="text-2xl sm:text-4xl font-bold mb-6">Work Experience</h1>
       {workExperienceData.map((job) => (
-        <div key={job.id} className="flex items-center border-2 border-black p-4 rounded-2xl mb-4">
+        <div key={job.id} className="flex items-center border-2 border-black p-4 rounded-2xl mb-2">
           <div className="hidden sm:block flex-shrink-0 w-32 h-32 p-2 mr-4">
             <img src={job.logo} className="w-full h-full object-contain mt-[-2]" alt={`${job.company} Logo`} />
           </div>

@@ -2,7 +2,7 @@ import profileIcon from "@/assets/resume/profile.png";
 
 const Resume = () => {
   return (
-    <div className="flex flex-row lg:space-x-8 w-full h-[36vh] items-center justify-center">
+    <div className="flex flex-row lg:space-x-8 w-full items-center justify-center">
       <div className="lg:flex justify-center items-center rounded-full shadow-xl overflow-hidden w-1/3 min-w-64 hidden bg-white">
         <img src={profileIcon} />
       </div>
@@ -10,8 +10,7 @@ const Resume = () => {
       <div className="text-black p-8 rounded-2xl shadow-lg w-full bg-white h-full flex flex-col items-start justify-center">
         <h1 className="text-2xl sm:text-4xl font-bold mb-4">Hi, I'm Michael Stich!</h1>
         <h2 className="text-lg sm:text-3xl mb-4">
-          An ambitious computer science student with over two years of hands-on experience in professional software
-          development.
+          A computer science student with over two years of hands-on experience in professional software development.
         </h2>
 
         <a href={`${import.meta.env.BASE_URL}Michael_Stich_Resume.pdf`} target="_blank">
