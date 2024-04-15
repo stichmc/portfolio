@@ -71,9 +71,8 @@ const Anello = () => {
                 <h1 className="text-2xl font-bold mb-4">Technical Details:</h1>
                 <ul className="list-disc">
                   <li className="text-sm sm:text-lg">
-                    <strong>Node.js Express Backend:</strong> The backend of Anello is powered by Node.js, leveraging
-                    the Express framework for scalability and high performance. This architecture enables Anello to
-                    handle a large volume of concurrent users seamlessly.
+                    <strong>Node.js Express Backends:</strong> The backends of Anello are powered by Node.js. This
+                    architecture enables Anello to handle a large volume of concurrent users seamlessly.
                   </li>
                   <li className="text-sm sm:text-lg">
                     <strong>PostgreSQL Database:</strong> Anello relies on a PostgreSQL SQL database for robust data
@@ -81,9 +80,9 @@ const Anello = () => {
                     store and retrieve user data efficiently.
                   </li>
                   <li className="text-sm sm:text-lg">
-                    <strong>React Frontend with Vite:</strong> The frontend of Anello is built using React, a popular
-                    JavaScript library for building user interfaces. Vite serves as the frontend build tool, enhancing
-                    development speed and overall performance for a responsive and engaging user interface.
+                    <strong>React Frontend:</strong> The frontend of Anello is built using React, a popular JavaScript
+                    library for building user interfaces. React's component-based architecture allows for modular and
+                    scalable development, enhancing the user experience.
                   </li>
                 </ul>
               </div>
