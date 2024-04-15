@@ -33,7 +33,7 @@ const Doom = () => {
                 </div>
 
                 <div className="md:w-1/2">
-                  <h1 className="text-xl sm:text-3xl font-bold mb-4">Game Details:</h1>
+                  <h1 className="text-xl sm:text-2xl font-bold mb-4">Game Details:</h1>
                   <p className="text-sm sm:text-xl mb-8">
                     This was one of my first coding projects ever, which started as a small class assignment and evolved
                     into a fully fledged 2D console viewport videogame. The style of gameplay is inspired by the "Space
@@ -47,12 +47,13 @@ const Doom = () => {
 
               <div className="mb-8 block items-center md:flex">
                 <div className="md:w-1/2">
+                  <h1 className="text-xl sm:text-2xl font-bold mb-4">Getting Started:</h1>
                   <p className="text-sm sm:text-xl mb-8">
-                    <strong>Getting Started:</strong> To start the game you first declare your username, (which you can
-                    use to resume your game if you ever need to quit), the you can choose which ASCII emoji you would
-                    like the game to represent your player as. Once you are in the game, you will be prompted with a map
-                    screen that will display all the levels you need to traverse through to get to the final boss, and
-                    various other modes you can play.
+                    To start the game you first declare your username, (which you can use to resume your game if you
+                    ever need to quit), the you can choose which ASCII emoji you would like the game to represent your
+                    player as. Once you are in the game, you will be prompted with a map screen that will display all
+                    the levels you need to traverse through to get to the final boss, and various other modes you can
+                    play.
                   </p>
                 </div>
 
@@ -64,28 +65,30 @@ const Doom = () => {
 
               <div className="mb-8 block items-center md:flex">
                 <div className="md:w-1/2 md:pr-8 space-y-2 mb-4">
-                  <img src={mapPicture} className="rounded-2xl" />
-                  <img src={levelPicture} className="rounded-2xl" />
+                  <img src={mapPicture} className="rounded-xl" />
+                  <img src={levelPicture} className="rounded-xl" />
                 </div>
                 <div className="md:w-1/2">
+                  <h1 className="text-xl sm:text-2xl font-bold mb-4">Rules:</h1>
                   <p className="text-sm sm:text-xl mb-8">
-                    <strong>Rules:</strong> Each player is given 100 health, and a set amount of ammo for each of there
-                    guns. Different keys on the keyboard inputted into the console shoot different weapons, and (WASD)
-                    are used to navigate around the level you are in. Every time you take a turn, shoot a gun, an
-                    animation will play and strike your enemy if you are positioned in the right place to shoot at them.
-                    If you miss your ammo is spent and the enemy doesn't lose any health. Every time you shoot at the
-                    enemy, the enemy will return fire with a random attack. BE CAREFUL! Some attacks can really hurt
-                    you. Each weapon has a unique property, so try to leverage that based on what enemy you are facing.
+                    Each player is given 100 health, and a set amount of ammo for each of there guns. Different keys on
+                    the keyboard inputted into the console shoot different weapons, and (WASD) are used to navigate
+                    around the level you are in. Every time you take a turn, shoot a gun, an animation will play and
+                    strike your enemy if you are positioned in the right place to shoot at them. If you miss your ammo
+                    is spent and the enemy doesn't lose any health. Every time you shoot at the enemy, the enemy will
+                    return fire with a random attack. BE CAREFUL! Some attacks can really hurt you. Each weapon has a
+                    unique property, so try to leverage that based on what enemy you are facing.
                   </p>
                 </div>
               </div>
 
-              <div className="mb-2 sm:mb-4 block items-center md:flex">
+              <div className="block items-center md:flex">
                 <div className="md:w-1/2">
+                  <h1 className="text-xl sm:text-2xl font-bold mb-4">Final Boss:</h1>
                   <p className="text-sm sm:text-xl mb-8">
-                    <strong>Final Boss:</strong> The final boss is a dragon with an EPIC death animation! He has special
-                    attacks that can really eat your health fast. You need to be quick and smart with this guy, if you
-                    slip up just for a second he will kill you! Make sure to hold onto your best weapons ammo!
+                    The final boss is a dragon with an EPIC death animation! He has special attacks that can really eat
+                    your health fast. You need to be quick and smart with this guy, if you slip up just for a second he
+                    will kill you! Make sure to hold onto your best weapons ammo!
                   </p>
                 </div>
 
