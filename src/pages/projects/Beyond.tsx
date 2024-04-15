@@ -9,7 +9,7 @@ const Beyond = () => {
     <div className="flex flex-col space-y-12 sm:space-y-24 lg:space-y-12 bg-gray-200">
       <Navbar isHome={false} isEducation={false} isProjects={true} />
 
-      <div className=" lg:p-24 p-8">
+      <div className="lg:p-24 p-8">
         <FadeIn>
           <div className="flex flex-col text-black p-8 rounded-2xl shadow-lg bg-white mt-2 sm:mt-[-2rem]">
             <div className="flex justify-between items-center">
