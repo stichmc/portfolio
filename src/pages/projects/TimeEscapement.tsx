@@ -22,9 +22,8 @@ const TimeEscapement = () => {
             <div className="mt-6 sm:mt-0">
               <h1 className="text-xl sm:text-3xl font-bold mb-4">University of Colorado Engineering Projects Expo</h1>
               <p className="text-sm sm:text-xl mb-8">
-                I led a team of four in the development of a 17th-century time escapement for a Physics Professor's
-                visual teaching aid. This project took place during the Engineering Projects Expo at the University of
-                Colorado from February 2022 to April 2022.
+                I led a team of four in the creation of a 17th-century time escapement for a physics professor's visual
+                teaching aid. This project took place at the CU Engineering Projects Expo 2022.
               </p>
               <div className="items-center lg:flex">
                 <div className="lg:w-1/2 lg:pr-8">
