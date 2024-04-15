@@ -16,19 +16,21 @@ import Doom from "./pages/projects/Doom.tsx";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
-        <Route path="*" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
-        <Route path={`${import.meta.env.BASE_URL}home`} element={<Home />} />
-        <Route path={`${import.meta.env.BASE_URL}eduction`} element={<Education />} />
+      <div className="h-[100svh] bg-gray-200">
+        <Routes>
+          <Route path="/" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
+          <Route path="*" element={<Navigate to={`${import.meta.env.BASE_URL}home`} />} />
+          <Route path={`${import.meta.env.BASE_URL}home`} element={<Home />} />
+          <Route path={`${import.meta.env.BASE_URL}eduction`} element={<Education />} />
 
-        <Route path={`${import.meta.env.BASE_URL}projects/anello`} element={<Anello />} />
-        <Route path={`${import.meta.env.BASE_URL}projects/beyond`} element={<Beyond />} />
-        <Route path={`${import.meta.env.BASE_URL}projects/hackcu-sattrack`} element={<SatTrack />} />
-        <Route path={`${import.meta.env.BASE_URL}projects/speech-to-text`} element={<SpeechText />} />
-        <Route path={`${import.meta.env.BASE_URL}projects/time-escapement`} element={<TimeEscapement />} />
-        <Route path={`${import.meta.env.BASE_URL}projects/doom`} element={<Doom />} />
-      </Routes>
+          <Route path={`${import.meta.env.BASE_URL}projects/anello`} element={<Anello />} />
+          <Route path={`${import.meta.env.BASE_URL}projects/beyond`} element={<Beyond />} />
+          <Route path={`${import.meta.env.BASE_URL}projects/hackcu-sattrack`} element={<SatTrack />} />
+          <Route path={`${import.meta.env.BASE_URL}projects/speech-to-text`} element={<SpeechText />} />
+          <Route path={`${import.meta.env.BASE_URL}projects/time-escapement`} element={<TimeEscapement />} />
+          <Route path={`${import.meta.env.BASE_URL}projects/doom`} element={<Doom />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   </React.StrictMode>
 );
