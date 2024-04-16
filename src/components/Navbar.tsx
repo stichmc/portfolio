@@ -100,7 +100,7 @@ const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
                   >
                     <div className="font-medium">C++ Console Based Game</div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      A 2D videogame inspired by the Space Invaders and DOOM games
+                      A 2D videogame inspired by Space Invaders and DOOM
                     </p>
                   </Link>
                 </li>
