@@ -15,7 +15,7 @@ const Education = () => {
               <h1 className="text-3xl sm:text-4xl font-bold mb-4">Education</h1>
               <h2 className="text-2xl sm:text-3xl font-bold mb-2">University of Colorado Boulder</h2>
               <p className="text-xl sm:text-2xl font-semibold mb-1">Bachelor of Science in Computer Science</p>
-              <p className="text-lg sm:text-xl">Expected Graduation: May 2025</p>
+              <p className="text-lg sm:text-xl">Expected Graduation: December 2024</p>
               <p className="text-md sm:text-xl mt-2">
                 I chose to pursue a computer science degree because of my fascination with software engineering and its
                 capacity to tackle intricate challenges, foster innovation, and develop impactful solutions that benefit
