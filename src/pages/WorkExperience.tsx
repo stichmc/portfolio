@@ -1,3 +1,4 @@
+import ringyIcon from "@/assets/work_experience/ringy_logo.png";
 import nasaIcon from "@/assets/work_experience/nasa.svg";
 import rnlIcon from "@/assets/work_experience/rnl.png";
 import upsIcon from "@/assets/work_experience/ups.png";
@@ -5,6 +6,16 @@ import johnsonIcon from "@/assets/work_experience/johnson.jpg";
 import discountIcon from "@/assets/work_experience/discount.jpg";
 
 const workExperienceData = [
+    {
+    id: 7,
+    position: "Software Engineer",
+    company: "Ringy",
+    startDate: "August 2024",
+    endDate: "Present",
+    responsibilities: [],
+    location: "Denver, Colorado",
+    logo: ringyIcon,
+  },
   {
     id: 6,
     position: "Full Stack Software Developer Intern",
