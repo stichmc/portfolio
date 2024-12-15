@@ -8,7 +8,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-import anelloLogo from "@/assets/anello_logo.svg";
+// import anelloLogo from "@/assets/anello_logo.svg";
 import beyondIcon from "@/assets/projects/beyond_logo.svg";
 
 interface Props {
@@ -38,7 +38,7 @@ const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
             <NavigationMenuTrigger className="text-lg font-bold">Projects</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-2 p-2 w-[280px] sm:w-[500px] lg:w-[600px] sm:grid-cols-[.75fr_1fr]">
-                <li className="row-span-3">
+                {/* <li className="row-span-3">
                   <Link
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
                     to={`${import.meta.env.BASE_URL}projects/anello`}
@@ -49,7 +49,7 @@ const Navbar = ({ isHome, isEducation, isProjects }: Props) => {
                       A messaging webapp with video conferencing capabilities
                     </p>
                   </Link>
-                </li>
+                </li> */}
                 <li className="row-span-3">
                   <Link
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
