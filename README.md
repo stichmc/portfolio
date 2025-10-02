@@ -1,10 +1,10 @@
-# Michael's Portfolio Website <!-- omit in toc -->
+# Michael Stich's Portfolio Website <!-- omit in toc -->
 
 Welcome to my portfolio website repository! This site serves as a showcase of my skills, projects, education, and work experiences. Whether you're a potential employer, collaborator, or just curious, I hope you find the information you're looking for.
 
 ## Technologies Used
 
-I built this website using React and Vite, for a modular, efficient, and visually appealing static single page website. HTML5 and Tailwind CSS were employed to structure content and provide styling, and JavaScript enhanced interactivity for a dynamic user experience. The decision to use React and Vite I believe reflects my commitment to modern development practices.
+I built this website using React and Vite, for a modular, efficient, and visually appealing static single page website.
 
 ## Usage
 
