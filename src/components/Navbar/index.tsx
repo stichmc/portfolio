@@ -9,7 +9,7 @@ export interface NavbarProps {
 const Navbar = ({ selectedSection, handleSetSelectedSection }: NavbarProps) => {
   return (
     <>
-      <div className="fixed h-[80px] top-0 left-0 w-screen flex flex-row items-center justify-between p-2 sm:p-4 md:p-8 lg:p-12 gap-2 z-50 bg-inherit">
+      <div className="fixed h-[80px] top-0 left-0 w-screen flex flex-row items-center justify-between p-2 sm:p-4 md:p-8 lg:p-12 gap-2 z-50 bg-card">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">mcstich.com</h3>
 
         <div className="flex flex-row gap-2 items-center justify-center">
@@ -67,7 +67,7 @@ const Navbar = ({ selectedSection, handleSetSelectedSection }: NavbarProps) => {
       </div>
 
       {/* Account For Navbar Height */}
-      <div className="mt-[80px]" />
+      <div className="h-[80px]" />
     </>
   );
 };
