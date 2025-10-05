@@ -6,7 +6,7 @@ export interface HeadShotDisplayProps {
 
 const HeadShotDisplay = ({ headShotImage }: HeadShotDisplayProps) => {
   return (
-    <div className="relative w-[400px] h-[400px]">
+    <div className="relative w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px]">
       <div className="absolute inset-0 z-0 flex items-center justify-center">
         <MotionDiv
           animate={{
@@ -22,7 +22,7 @@ const HeadShotDisplay = ({ headShotImage }: HeadShotDisplayProps) => {
             repeatDelay: 2,
             delay: 2,
           }}
-          className="bg-card-foreground w-[200px] h-[200px]"
+          className="bg-card-foreground w-[100px] h-[100px] sm:w-[125px] sm:h-[125px] md:w-[150px] md:h-[150px] lg:w-[175px] lg:h-[175px] xl:w-[200px] xl:h-[200px]"
         />
       </div>
       <div className="relative z-10 flex items-center justify-center rounded-full w-full h-full overflow-hidden border-card-foreground border-4">

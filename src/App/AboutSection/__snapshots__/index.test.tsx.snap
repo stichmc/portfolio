@@ -6,7 +6,7 @@ exports[`AboutSection 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-24 items-center justify-center h-[80vh] max-w-[1500px] sm:p-12 p-4"
+        class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center justify-center h-[70vh] max-w-[1500px] sm:p-12 p-4"
       >
         <div
           class="flex flex-col items-center gap-4 justify-center text-center"
@@ -18,7 +18,7 @@ exports[`AboutSection 1`] = `
               class=""
             >
               <h1
-                class="scroll-m-20 text-center text-4xl font-extrabold text-balance"
+                class="scroll-m-20 text-center text-2xl md:text-3xl xl:text-4xl font-extrabold text-balance"
               >
                 <div
                   style="display: inline-block; padding-right: 12px;"
@@ -36,7 +36,7 @@ exports[`AboutSection 1`] = `
               class="max-w-[500px]"
             >
               <h2
-                class="scroll-m-20 text-2xl font-semibold tracking-tight first:mt-0"
+                class="scroll-m-20 text-lg md:text-xl xl:text-2xl font-semibold tracking-tight first:mt-0"
               >
                 A software engineer with 3 years of professional work experience.
               </h2>
@@ -54,41 +54,11 @@ exports[`AboutSection 1`] = `
                 role="group"
               >
                 <button
-                  class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 sm:text-lg"
+                  class="whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 text-lg"
                 >
                   <svg
-                    class="lucide lucide-mails "
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      height="13"
-                      rx="2"
-                      width="16"
-                      x="6"
-                      y="4"
-                    />
-                    <path
-                      d="m22 7-7.1 3.78c-.57.3-1.23.3-1.8 0L6 7"
-                    />
-                    <path
-                      d="M2 8v11c0 1.1.9 2 2 2h14"
-                    />
-                  </svg>
-                   Email
-                </button>
-                <button
-                  class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 sm:text-lg"
-                >
-                  <svg
-                    class="lucide lucide-linkedin "
+                    aria-hidden="true"
+                    class="lucide lucide-linkedin"
                     fill="none"
                     height="24"
                     stroke="currentColor"
@@ -117,10 +87,11 @@ exports[`AboutSection 1`] = `
                    LinkedIn
                 </button>
                 <button
-                  class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 sm:text-lg"
+                  class="whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 text-lg"
                 >
                   <svg
-                    class="lucide lucide-github "
+                    aria-hidden="true"
+                    class="lucide lucide-github"
                     fill="none"
                     height="24"
                     stroke="currentColor"
@@ -141,10 +112,11 @@ exports[`AboutSection 1`] = `
                    Github
                 </button>
                 <button
-                  class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 sm:text-lg"
+                  class="whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 text-lg"
                 >
                   <svg
-                    class="lucide lucide-code "
+                    aria-hidden="true"
+                    class="lucide lucide-file-user"
                     fill="none"
                     height="24"
                     stroke="currentColor"
@@ -155,14 +127,54 @@ exports[`AboutSection 1`] = `
                     width="24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <polyline
-                      points="16 18 22 12 16 6"
+                    <path
+                      d="M14 2v4a2 2 0 0 0 2 2h4"
                     />
-                    <polyline
-                      points="8 6 2 12 8 18"
+                    <path
+                      d="M15 18a3 3 0 1 0-6 0"
+                    />
+                    <path
+                      d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"
+                    />
+                    <circle
+                      cx="12"
+                      cy="13"
+                      r="2"
                     />
                   </svg>
-                   Source Code
+                   Resume
+                </button>
+                <button
+                  class="whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 text-lg"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-mails"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 1-1.732"
+                    />
+                    <path
+                      d="m22 5.5-6.419 4.179a2 2 0 0 1-2.162 0L7 5.5"
+                    />
+                    <rect
+                      height="12"
+                      rx="2"
+                      width="15"
+                      x="7"
+                      y="3"
+                    />
+                  </svg>
+                   Email
                 </button>
               </div>
             </div>
@@ -174,7 +186,7 @@ exports[`AboutSection 1`] = `
               class="max-w-[550px]"
             >
               <h3
-                class="leading-6"
+                class="leading-6 text-xs md:text-sm xl:text-base"
               >
                 I build and scale applications for large user bases across the entire stack: frontend, backend, and cloud. I'm very passionate about solving complex problems and working with extraordinary people.
               </h3>
@@ -185,13 +197,13 @@ exports[`AboutSection 1`] = `
           class="flex items-center justify-center"
         >
           <div
-            class="relative w-[400px] h-[400px]"
+            class="relative w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px]"
           >
             <div
               class="absolute inset-0 z-0 flex items-center justify-center"
             >
               <div
-                class="bg-card-foreground w-[200px] h-[200px]"
+                class="bg-card-foreground w-[100px] h-[100px] sm:w-[125px] sm:h-[125px] md:w-[150px] md:h-[150px] lg:w-[175px] lg:h-[175px] xl:w-[200px] xl:h-[200px]"
               />
             </div>
             <div
@@ -210,7 +222,7 @@ exports[`AboutSection 1`] = `
   </body>,
   "container": <div>
     <div
-      class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-24 items-center justify-center h-[80vh] max-w-[1500px] sm:p-12 p-4"
+      class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center justify-center h-[70vh] max-w-[1500px] sm:p-12 p-4"
     >
       <div
         class="flex flex-col items-center gap-4 justify-center text-center"
@@ -222,7 +234,7 @@ exports[`AboutSection 1`] = `
             class=""
           >
             <h1
-              class="scroll-m-20 text-center text-4xl font-extrabold text-balance"
+              class="scroll-m-20 text-center text-2xl md:text-3xl xl:text-4xl font-extrabold text-balance"
             >
               <div
                 style="display: inline-block; padding-right: 12px;"
@@ -240,7 +252,7 @@ exports[`AboutSection 1`] = `
             class="max-w-[500px]"
           >
             <h2
-              class="scroll-m-20 text-2xl font-semibold tracking-tight first:mt-0"
+              class="scroll-m-20 text-lg md:text-xl xl:text-2xl font-semibold tracking-tight first:mt-0"
             >
               A software engineer with 3 years of professional work experience.
             </h2>
@@ -258,41 +270,11 @@ exports[`AboutSection 1`] = `
               role="group"
             >
               <button
-                class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 sm:text-lg"
+                class="whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 text-lg"
               >
                 <svg
-                  class="lucide lucide-mails "
-                  fill="none"
-                  height="24"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    height="13"
-                    rx="2"
-                    width="16"
-                    x="6"
-                    y="4"
-                  />
-                  <path
-                    d="m22 7-7.1 3.78c-.57.3-1.23.3-1.8 0L6 7"
-                  />
-                  <path
-                    d="M2 8v11c0 1.1.9 2 2 2h14"
-                  />
-                </svg>
-                 Email
-              </button>
-              <button
-                class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 sm:text-lg"
-              >
-                <svg
-                  class="lucide lucide-linkedin "
+                  aria-hidden="true"
+                  class="lucide lucide-linkedin"
                   fill="none"
                   height="24"
                   stroke="currentColor"
@@ -321,10 +303,11 @@ exports[`AboutSection 1`] = `
                  LinkedIn
               </button>
               <button
-                class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 sm:text-lg"
+                class="whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 text-lg"
               >
                 <svg
-                  class="lucide lucide-github "
+                  aria-hidden="true"
+                  class="lucide lucide-github"
                   fill="none"
                   height="24"
                   stroke="currentColor"
@@ -345,10 +328,11 @@ exports[`AboutSection 1`] = `
                  Github
               </button>
               <button
-                class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 sm:text-lg"
+                class="whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 text-lg"
               >
                 <svg
-                  class="lucide lucide-code "
+                  aria-hidden="true"
+                  class="lucide lucide-file-user"
                   fill="none"
                   height="24"
                   stroke="currentColor"
@@ -359,14 +343,54 @@ exports[`AboutSection 1`] = `
                   width="24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <polyline
-                    points="16 18 22 12 16 6"
+                  <path
+                    d="M14 2v4a2 2 0 0 0 2 2h4"
                   />
-                  <polyline
-                    points="8 6 2 12 8 18"
+                  <path
+                    d="M15 18a3 3 0 1 0-6 0"
+                  />
+                  <path
+                    d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"
+                  />
+                  <circle
+                    cx="12"
+                    cy="13"
+                    r="2"
                   />
                 </svg>
-                 Source Code
+                 Resume
+              </button>
+              <button
+                class="whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 flex items-center justify-center gap-2 text-lg"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-mails"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 1-1.732"
+                  />
+                  <path
+                    d="m22 5.5-6.419 4.179a2 2 0 0 1-2.162 0L7 5.5"
+                  />
+                  <rect
+                    height="12"
+                    rx="2"
+                    width="15"
+                    x="7"
+                    y="3"
+                  />
+                </svg>
+                 Email
               </button>
             </div>
           </div>
@@ -378,7 +402,7 @@ exports[`AboutSection 1`] = `
             class="max-w-[550px]"
           >
             <h3
-              class="leading-6"
+              class="leading-6 text-xs md:text-sm xl:text-base"
             >
               I build and scale applications for large user bases across the entire stack: frontend, backend, and cloud. I'm very passionate about solving complex problems and working with extraordinary people.
             </h3>
@@ -389,13 +413,13 @@ exports[`AboutSection 1`] = `
         class="flex items-center justify-center"
       >
         <div
-          class="relative w-[400px] h-[400px]"
+          class="relative w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px]"
         >
           <div
             class="absolute inset-0 z-0 flex items-center justify-center"
           >
             <div
-              class="bg-card-foreground w-[200px] h-[200px]"
+              class="bg-card-foreground w-[100px] h-[100px] sm:w-[125px] sm:h-[125px] md:w-[150px] md:h-[150px] lg:w-[175px] lg:h-[175px] xl:w-[200px] xl:h-[200px]"
             />
           </div>
           <div
