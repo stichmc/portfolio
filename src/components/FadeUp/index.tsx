@@ -4,20 +4,22 @@ import { AnimationGeneratorType, useInView } from "framer-motion";
 
 export interface FadeUpProps {
   children: ReactNode;
+  className?: string;
   delay?: number;
   duration?: number;
   type?: AnimationGeneratorType;
-  className?: string;
 }
 
-const FadeUp = ({ children, delay = 0, duration = 0, type = undefined, className = "" }: FadeUpProps) => {
+const FadeUp = ({ children, className = "", delay = 0, duration = 0, type = undefined }: FadeUpProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (isInView && !isVisible) setIsVisible(true);
-  }, [isInView]);
+    if (isInView && !isVisible) {
+      setIsVisible(true);
+    }
+  }, [isInView, isVisible]);
 
   return (
     <MotionDiv
