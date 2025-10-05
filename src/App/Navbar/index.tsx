@@ -9,8 +9,8 @@ export interface NavbarProps {
 const Navbar = ({ selectedSection, handleSetSelectedSection }: NavbarProps) => {
   return (
     <>
-      <div className="fixed h-[80px] top-0 left-0 w-screen flex flex-row items-center justify-between p-2 sm:p-4 md:p-8 lg:p-12 gap-2 z-50 bg-card">
-        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">mcstich.com</h3>
+      <div className="fixed h-[80px] top-0 left-0 w-screen flex flex-row items-center justify-between p-2 sm:p-4 md:p-8 lg:p-12 gap-2 z-50 bg-secondary">
+        <p className="scroll-m-20 text-xl font-semibold tracking-tight">mcstich.com</p>
 
         <div className="flex flex-row gap-2 items-center justify-center">
           <Button
@@ -27,23 +27,23 @@ const Navbar = ({ selectedSection, handleSetSelectedSection }: NavbarProps) => {
           <Button
             variant="link"
             className={cn("text-lg select-none", {
-              "text-primary": selectedSection === "skills",
-              "text-primary/75": selectedSection !== "skills",
-            })}
-            onClick={() => handleSetSelectedSection("skills")}
-          >
-            Skills
-          </Button>
-
-          <Button
-            variant="link"
-            className={cn("text-lg select-none", {
               "text-primary": selectedSection === "work",
               "text-primary/75": selectedSection !== "work",
             })}
             onClick={() => handleSetSelectedSection("work")}
           >
             Work
+          </Button>
+
+          <Button
+            variant="link"
+            className={cn("text-lg select-none", {
+              "text-primary": selectedSection === "skills",
+              "text-primary/75": selectedSection !== "skills",
+            })}
+            onClick={() => handleSetSelectedSection("skills")}
+          >
+            Skills
           </Button>
 
           <Button
@@ -62,7 +62,7 @@ const Navbar = ({ selectedSection, handleSetSelectedSection }: NavbarProps) => {
           className="select-none"
           onClick={() => window.open(`${env.BASE_URL}/Michael_Stich_Resume.pdf`, "_blank")}
         >
-          Download My Resume
+          View My Resume
         </Button>
       </div>
 

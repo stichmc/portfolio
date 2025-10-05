@@ -6,7 +6,8 @@ let props: NavbarProps;
 
 beforeEach(() => {
   props = {
-    handlePanToSection: vi.fn(),
+    selectedSection: "about",
+    handleSetSelectedSection: vi.fn(),
   };
 });
 
