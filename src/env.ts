@@ -4,7 +4,7 @@ const envSchema = z.object({
   // Vite environment variables
   BASE_URL: z.string().min(1),
   DEV: z.boolean(),
-  MODE: z.enum(["development", "production"]),
+  MODE: z.enum(["development", "production", "test"]),
   PROD: z.boolean(),
   SSR: z.boolean(),
 });
