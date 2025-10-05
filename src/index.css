@@ -33,16 +33,6 @@
     --ring: 240 10% 3.9%;
 
     --radius: 0.5rem;
-
-    .tooltip {
-      background-color: black;
-      color: var(--text-color-top);
-      border-radius: 0.5rem;
-      color: white;
-      font-weight: 600; /* semibold */
-      font-size: 1rem;
-    }
-    color-scheme: dark;
   }
 
   .dark {
@@ -73,6 +63,8 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+
+    color-scheme: dark;
   }
 }
 
