@@ -1,6 +1,6 @@
 import { expect, test, beforeEach } from "vitest";
 import { render } from "@testing-library/react";
-import HeadShotDisplay, { HeadShotDisplayProps } from "./";
+import HeadShotDisplay, { HeadShotDisplayProps } from ".";
 
 let props: HeadShotDisplayProps;
 

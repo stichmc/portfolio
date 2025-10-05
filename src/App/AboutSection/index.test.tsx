@@ -1,6 +1,6 @@
 import { expect, test, beforeEach, vi } from "vitest";
 import { render } from "@testing-library/react";
-import AboutSection, { AboutSectionProps } from "./";
+import AboutSection, { AboutSectionProps } from ".";
 
 let props: AboutSectionProps;
 

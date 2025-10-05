@@ -6,7 +6,7 @@ exports[`AboutSection 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center justify-center h-[70vh] max-w-[1500px] sm:p-12 p-4"
+        class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center pt-24 sm:pt-0 justify-end sm:justify-center h-[80vh] max-w-[1500px] sm:p-12 p-4"
       >
         <div
           class="flex flex-col items-center gap-4 justify-center text-center"
@@ -222,7 +222,7 @@ exports[`AboutSection 1`] = `
   </body>,
   "container": <div>
     <div
-      class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center justify-center h-[70vh] max-w-[1500px] sm:p-12 p-4"
+      class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center pt-24 sm:pt-0 justify-end sm:justify-center h-[80vh] max-w-[1500px] sm:p-12 p-4"
     >
       <div
         class="flex flex-col items-center gap-4 justify-center text-center"
