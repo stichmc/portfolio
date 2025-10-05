@@ -13,7 +13,7 @@ const ThemeToggle = () => {
   const { setTheme } = useTheme();
 
   return (
-    <div className="fixed bottom-4 left-4 z-50">
+    <div className="fixed top-4 left-4 z-50">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" size="icon">
@@ -28,9 +28,6 @@ const ThemeToggle = () => {
           </DropdownMenuItem>
           <DropdownMenuItem onClick={() => setTheme("dark")} className="cursor-pointer">
             Dark
-          </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setTheme("system")} className="cursor-pointer">
-            System
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

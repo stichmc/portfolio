@@ -6,7 +6,7 @@ exports[`ThemeToggle 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="fixed bottom-4 left-4 z-50"
+        class="fixed top-4 left-4 z-50"
       >
         <button
           aria-expanded="false"
@@ -17,6 +17,7 @@ exports[`ThemeToggle 1`] = `
           type="button"
         >
           <svg
+            aria-hidden="true"
             class="lucide lucide-sun h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
             fill="none"
             height="24"
@@ -59,6 +60,7 @@ exports[`ThemeToggle 1`] = `
             />
           </svg>
           <svg
+            aria-hidden="true"
             class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0"
             fill="none"
             height="24"
@@ -71,7 +73,7 @@ exports[`ThemeToggle 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+              d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
             />
           </svg>
           <span
@@ -85,7 +87,7 @@ exports[`ThemeToggle 1`] = `
   </body>,
   "container": <div>
     <div
-      class="fixed bottom-4 left-4 z-50"
+      class="fixed top-4 left-4 z-50"
     >
       <button
         aria-expanded="false"
@@ -96,6 +98,7 @@ exports[`ThemeToggle 1`] = `
         type="button"
       >
         <svg
+          aria-hidden="true"
           class="lucide lucide-sun h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
           fill="none"
           height="24"
@@ -138,6 +141,7 @@ exports[`ThemeToggle 1`] = `
           />
         </svg>
         <svg
+          aria-hidden="true"
           class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0"
           fill="none"
           height="24"
@@ -150,7 +154,7 @@ exports[`ThemeToggle 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+            d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
           />
         </svg>
         <span
