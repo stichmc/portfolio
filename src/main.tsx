@@ -11,6 +11,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 
 // Pages
 import App from "@/App";
+import NasaInternships from "@/pages/NasaInternships";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} />
+          <Route path="/nasa-internships" element={<NasaInternships />} />
           <Route path="*" element={<Navigate to={env.BASE_URL} />} />
         </Routes>
       </BrowserRouter>
