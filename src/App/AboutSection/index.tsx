@@ -66,7 +66,7 @@ const AboutSection = ({ headShotImage }: AboutSectionProps) => {
               <Button
                 variant="outline"
                 className="flex items-center justify-center gap-2 text-lg"
-                onClick={() => window.open(`${env.BASE_URL}/Michael_Stich_Resume.pdf`, "_blank")}
+                onClick={() => window.open(`${env.BASE_URL}Michael_Stich_Resume.pdf`, "_blank")}
               >
                 <FileUser /> Resume
               </Button>
@@ -113,7 +113,7 @@ const AboutSection = ({ headShotImage }: AboutSectionProps) => {
                 <Button
                   variant="outline"
                   className="flex items-center justify-center gap-2"
-                  onClick={() => window.open(`${env.BASE_URL}/Michael_Stich_Resume.pdf`, "_blank")}
+                  onClick={() => window.open(`${env.BASE_URL}Michael_Stich_Resume.pdf`, "_blank")}
                 >
                   <FileUser /> Resume
                 </Button>
