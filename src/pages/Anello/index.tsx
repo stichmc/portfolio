@@ -28,9 +28,11 @@ const Anello = () => {
 
         <FadeUp delay={0.75} duration={0.5} className="max-w-[800px]">
           <h2 className="leading-6 text-sm md:text-base xl:text-lg">
-            I decided to put some of my skills to the test and created a chat app from scratch in late 2023. Anello can
-            text, group text, call, video call. The biggest technical challenge with the project was understanding how
-            to use the WebRTC to enable such powerful features on my webapp.
+            Anello is a full-featured communication application I built from the ground up in late 2023. It supports
+            real-time text messaging, group chats, and high-quality voice and video calls. The project's primary
+            technical challenge was the implementation of WebRTC to facilitate peer-to-peer connections for media
+            streams. This endeavor provided a deep dive into the complexities of real-time communication protocols and
+            significantly enhanced my skills in building robust, interactive web applications.
           </h2>
         </FadeUp>
       </div>
