@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
-// import { useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { Briefcase, GraduationCap, MessageCircleMore, PcCase } from "lucide-react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
 import { useTheme } from "@/components-shadcn/theme-provider";
-// import { Button } from "@/components-shadcn/button";
+import { Button } from "@/components-shadcn/button";
 import useIsMobileView from "@/hooks/useIsMobileView";
 
 import nasaLogo from "@/assets/nasa.svg";
@@ -55,7 +55,7 @@ const timeLineData: TimeLineElement[] = [
         "During my first internship at NASA, I refactored the NPSS Power System Library, a simulation framework for modeling aircraft propulsion and power systems.",
     } as WorkContent,
     image: nasaLogo,
-    learnMoreLink: "/first-nasa-internship",
+    learnMoreLink: "/nasa-internships",
   },
   {
     id: "second-nasa-internship",
@@ -70,7 +70,7 @@ const timeLineData: TimeLineElement[] = [
         "During my second internship at NASA, I developed control software for a prototype Artemis lunar power grid, a system designed to distribute and manage electrical power on the Lunar Gateway and the lunar surface.",
     } as WorkContent,
     image: nasaLogo,
-    learnMoreLink: "/second-nasa-internship",
+    learnMoreLink: "/nasa-internships",
   },
   {
     id: "anello-project",
@@ -134,7 +134,7 @@ const timeLineData: TimeLineElement[] = [
 const TimeLine = () => {
   const { theme } = useTheme();
   const isMobileView = useIsMobileView();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const colorToUse = theme === "dark" ? "white" : "black";
   const inverseColorToUse = theme === "dark" ? "black" : "white";
@@ -168,7 +168,7 @@ const TimeLine = () => {
                   </div>
                 </div>
                 <div className="text-xs sm:text-sm md:text-base">{(entry.content as WorkContent).description}</div>
-                {/* <Button
+                <Button
                   style={{
                     backgroundColor: inverseColorToUse,
                     color: colorToUse,
@@ -177,7 +177,7 @@ const TimeLine = () => {
                   onClick={() => navigate(entry.learnMoreLink)}
                 >
                   Learn More
-                </Button> */}
+                </Button>
               </>
             )}
 
@@ -196,7 +196,7 @@ const TimeLine = () => {
                   </div>
                 </div>
                 <div className="text-xs sm:text-sm md:text-base">{(entry.content as ProjectContent).description}</div>
-                {/* <Button
+                <Button
                   style={{
                     backgroundColor: inverseColorToUse,
                     color: colorToUse,
@@ -205,7 +205,7 @@ const TimeLine = () => {
                   onClick={() => navigate(entry.learnMoreLink)}
                 >
                   Learn More
-                </Button> */}
+                </Button>
               </>
             )}
 
@@ -224,7 +224,7 @@ const TimeLine = () => {
                   </div>
                 </div>
                 <div className="text-xs sm:text-sm md:text-base">{(entry.content as EducationContent).description}</div>
-                {/* <Button
+                <Button
                   style={{
                     backgroundColor: inverseColorToUse,
                     color: colorToUse,
@@ -233,7 +233,7 @@ const TimeLine = () => {
                   onClick={() => navigate(entry.learnMoreLink)}
                 >
                   Learn More
-                </Button> */}
+                </Button>
               </>
             )}
           </div>
