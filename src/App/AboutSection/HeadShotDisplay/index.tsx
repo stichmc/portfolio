@@ -25,7 +25,11 @@ const HeadShotDisplay = ({ headShotImage }: HeadShotDisplayProps) => {
           className="bg-card-foreground w-[100px] h-[100px] sm:w-[125px] sm:h-[125px] md:w-[150px] md:h-[150px] lg:w-[175px] lg:h-[175px] xl:w-[200px] xl:h-[200px]"
         />
       </div>
-      <div className="relative z-10 flex items-center justify-center rounded-full w-full h-full overflow-hidden border-card-foreground border-4">
+      <div
+        className="relative z-10 flex items-center justify-center rounded-full w-full h-full overflow-hidden border-card-foreground border-4"
+        // Ensure Safari renders this animation correctly
+        style={{ transform: "translateZ(0)" }}
+      >
         <img className="w-full h-full object-cover" src={headShotImage} alt="michael-headshot" />
       </div>
     </div>

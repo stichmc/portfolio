@@ -17,7 +17,7 @@ const AboutSection = ({ headShotImage }: AboutSectionProps) => {
   const isMobileView = useIsMobileView();
 
   return (
-    <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center pt-24 sm:pt-0 justify-end sm:justify-center h-[80vh] max-w-[1500px] sm:p-12 p-4">
+    <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center pt-24 sm:pt-0 justify-end sm:justify-center h-[650px] md:h-[700px] max-w-[1500px] sm:p-12 p-4">
       <div className="flex flex-col items-center gap-4 justify-center text-center">
         <FadeUp duration={0.5}>
           <h1 className="scroll-m-20 text-center text-2xl md:text-3xl xl:text-4xl font-extrabold text-balance">
@@ -66,7 +66,7 @@ const AboutSection = ({ headShotImage }: AboutSectionProps) => {
               <Button
                 variant="outline"
                 className="flex items-center justify-center gap-2 text-lg"
-                onClick={() => window.open(`${env.BASE_URL}/Michael_Stich_Resume.pdf`, "_blank")}
+                onClick={() => window.open(`${env.BASE_URL}Michael_Stich_Resume.pdf`, "_blank")}
               >
                 <FileUser /> Resume
               </Button>
@@ -113,7 +113,7 @@ const AboutSection = ({ headShotImage }: AboutSectionProps) => {
                 <Button
                   variant="outline"
                   className="flex items-center justify-center gap-2"
-                  onClick={() => window.open(`${env.BASE_URL}/Michael_Stich_Resume.pdf`, "_blank")}
+                  onClick={() => window.open(`${env.BASE_URL}Michael_Stich_Resume.pdf`, "_blank")}
                 >
                   <FileUser /> Resume
                 </Button>
