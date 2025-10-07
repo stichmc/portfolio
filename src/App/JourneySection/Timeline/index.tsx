@@ -81,7 +81,7 @@ const timeLineData: TimeLineElement[] = [
       name: "Anello Chat App",
       role: "Sole Developer",
       description:
-        "I built a full-featured chat app supporting text, voice, and video calls, drawing inspiration from modern VOIP and collaboration tools such as Discord, Slack, and Zoom.",
+        "I built a full-featured chat app supporting text, group text, voice, and video calls, drawing inspiration from modern VOIP and collaboration tools such as Discord, Slack, and Zoom.",
     } as ProjectContent,
     image: anelloLogo,
     learnMoreLink: "/anello",
