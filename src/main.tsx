@@ -13,6 +13,7 @@ import { TooltipProvider } from "@/components-shadcn/tooltip";
 // Pages
 import App from "@/App";
 import NasaInternships from "@/pages/NasaInternships";
+import Anello from "@/pages/Anello";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Routes>
             <Route path="/" element={<App />} />
             <Route path="/nasa-internships" element={<NasaInternships />} />
+            <Route path="/anello" element={<Anello />} />
             <Route path="*" element={<Navigate to={env.BASE_URL} />} />
           </Routes>
         </BrowserRouter>
