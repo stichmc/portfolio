@@ -1,6 +1,6 @@
 import { expect, test, beforeEach, vi } from "vitest";
 import { render } from "@testing-library/react";
-import FirstNasaInternship from ".";
+import NasaInternships from ".";
 
 beforeEach(() => {
   const mockIntersectionObserver = vi.fn();
@@ -12,7 +12,7 @@ beforeEach(() => {
   window.IntersectionObserver = mockIntersectionObserver;
 });
 
-test("FirstNasaInternship", () => {
-  const rendering = render(<FirstNasaInternship />);
+test("NasaInternships", () => {
+  const rendering = render(<NasaInternships />);
   expect(rendering).toMatchSnapshot();
 });
