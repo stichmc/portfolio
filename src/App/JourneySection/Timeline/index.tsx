@@ -67,10 +67,10 @@ const timeLineData: TimeLineElement[] = [
       name: "CU Engineering Expo 2023",
       role: "Team Lead",
       description:
-        "Led a team of four to build a 17th-century time escapement for our physics professor’s visual teaching aid.",
+        "Led a team of four to build a 17th-century time escapement for my physics professor’s visual teaching aid.",
     } as ProjectContent,
     image: expoLogo,
-    learnMoreLink: "/cu-expo",
+    learnMoreLink: "/engineering-expo",
   },
   {
     id: "second-nasa-internship",
