@@ -3,7 +3,6 @@ import { Loader } from "lucide-react";
 
 import FadeUp from "@/components/FadeUp";
 import HomeButton from "@/components/HomeButton";
-import { Separator } from "@/components-shadcn/separator";
 
 import ringyLogo from "@/assets/ringy_logo_full.png";
 
