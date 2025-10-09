@@ -72,7 +72,7 @@ const Anello = () => {
         </div>
       </FadeUp>
 
-      <div className="flex items-center justify-center pt-20 sm:pt-0 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[700px] aspect-video">
+      <div className="flex items-center justify-center pt-20 sm:pt-0 w-full max-w-[300px] sm:max-w-[400px] md:max-w-[600px] lg:max-w-[800px]">
         {!imagesLoaded && (
           <div className="w-full h-full flex items-center justify-center">
             <Loader className="animate-spin" size={50} />
