@@ -17,6 +17,7 @@ import EngineeringExpo from "@/pages/EngineeringExpo";
 import Anello from "@/pages/Anello";
 import HackCU from "@/pages/HackCU";
 import Ringy from "@/pages/Ringy";
+import CuBoulder from "@/pages/CuBoulder";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -31,6 +32,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Route path="/anello" element={<Anello />} />
             <Route path="/hack-cu" element={<HackCU />} />
             <Route path="/ringy" element={<Ringy />} />
+            <Route path="/cu-boulder" element={<CuBoulder />} />
             <Route path="*" element={<Navigate to={env.BASE_URL} />} />
           </Routes>
         </BrowserRouter>
