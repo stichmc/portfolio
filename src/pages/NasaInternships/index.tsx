@@ -6,11 +6,11 @@ import FadeUp from "@/components/FadeUp";
 import { Carousel, CarouselContent, CarouselItem } from "@/components-shadcn/carousel";
 import HomeButton from "@/components/HomeButton";
 
-import planeImage from "@/assets/nasa-pictures/plane.jpg";
-import internsImage from "@/assets/nasa-pictures/interns.jpg";
-import issControlImage from "@/assets/nasa-pictures/iss_control.jpg";
-import myDeskImage from "@/assets/nasa-pictures/my_desk.jpg";
-import oven from "@/assets/nasa-pictures/oven.jpg";
+import planeImage from "@/assets/nasa-pictures/plane_pic.jpg";
+import internsImage from "@/assets/nasa-pictures/interns_pic.jpg";
+import issControlImage from "@/assets/nasa-pictures/iss_control_pic.jpg";
+import myDeskImage from "@/assets/nasa-pictures/my_desk_pic.jpg";
+import oven from "@/assets/nasa-pictures/oven_pic.jpg";
 
 export const carouselImageArray = [
   { src: planeImage, alt: "nasa-plane-image" },
