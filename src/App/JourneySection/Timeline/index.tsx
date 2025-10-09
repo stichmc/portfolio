@@ -109,7 +109,8 @@ const timeLineData: TimeLineElement[] = [
     content: {
       name: "HackCU 10 Hackathon",
       role: "Team Member",
-      description: "Our team of 3 developed a real-time satellite telemetry tracker for the HackCU 10 hackathon event.",
+      description:
+        "Our team of three developed a real-time satellite telemetry tracker for the HackCU 10 hackathon event.",
     } as ProjectContent,
     image: hackCuLogo,
     learnMoreLink: "/hack-cu",

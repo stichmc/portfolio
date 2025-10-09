@@ -15,6 +15,7 @@ import App from "@/App";
 import NasaInternships from "@/pages/NasaInternships";
 import EngineeringExpo from "@/pages/EngineeringExpo";
 import Anello from "@/pages/Anello";
+import HackCU from "@/pages/HackCU";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -27,6 +28,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Route path="/nasa-internships" element={<NasaInternships />} />
             <Route path="/engineering-expo" element={<EngineeringExpo />} />
             <Route path="/anello" element={<Anello />} />
+            <Route path="/hack-cu" element={<HackCU />} />
             <Route path="*" element={<Navigate to={env.BASE_URL} />} />
           </Routes>
         </BrowserRouter>
