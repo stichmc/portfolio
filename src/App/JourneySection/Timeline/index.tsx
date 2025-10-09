@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { useNavigate } from "react-router";
-import { Briefcase, GraduationCap, MessageCircleMore, PcCase } from "lucide-react";
+import { Briefcase, GraduationCap, Laptop, Lightbulb, MessageCircleMore, PcCase } from "lucide-react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -10,9 +10,10 @@ import useIsMobileView from "@/hooks/useIsMobileView";
 
 import nasaLogo from "@/assets/nasa.svg";
 import anelloLogo from "@/assets/anello.png";
+import expoLogo from "@/assets/cu_expo.jpg";
+import hackCuLogo from "@/assets/hack_cu_logo.png";
 import ringyLogo from "@/assets/ringy_logo.png";
 import cuBoulderLogo from "@/assets/cu_logo.png";
-import deskign2DeskLogo from "@/assets/design2desk_profile.png";
 
 interface EducationContent {
   name: string;
@@ -58,6 +59,20 @@ const timeLineData: TimeLineElement[] = [
     learnMoreLink: "/nasa-internships",
   },
   {
+    id: "engineering-expo",
+    date: "February 2023 - April 2023",
+    icon: <Lightbulb />,
+    type: "project",
+    content: {
+      name: "CU Engineering Expo 2023",
+      role: "Team Lead",
+      description:
+        "Led a team of four to build a 17th-century time escapement for our physics professor’s visual teaching aid.",
+    } as ProjectContent,
+    image: expoLogo,
+    learnMoreLink: "/cu-expo",
+  },
+  {
     id: "second-nasa-internship",
     date: "June 2023 - August 2023",
     icon: <Briefcase />,
@@ -85,6 +100,19 @@ const timeLineData: TimeLineElement[] = [
     } as ProjectContent,
     image: anelloLogo,
     learnMoreLink: "/anello",
+  },
+  {
+    id: "hack-cu",
+    date: "March 2024",
+    icon: <Laptop />,
+    type: "project",
+    content: {
+      name: "HackCU 10 Hackathon",
+      role: "Team Member",
+      description: "Our team of 3 developed a real-time satellite telemetry tracker for the HackCU 10 hackathon event.",
+    } as ProjectContent,
+    image: hackCuLogo,
+    learnMoreLink: "/hack-cu",
   },
   {
     id: "ringy",
@@ -115,19 +143,6 @@ const timeLineData: TimeLineElement[] = [
     } as EducationContent,
     image: cuBoulderLogo,
     learnMoreLink: "/cu-boulder",
-  },
-  {
-    id: "design-2-desk",
-    date: "August 2025",
-    icon: <PcCase />,
-    type: "project",
-    content: {
-      name: "Design2Desk Website",
-      role: "Sole Developer",
-      description: "I built a website that allows people to customize quality custom computer parts.",
-    } as ProjectContent,
-    image: deskign2DeskLogo,
-    learnMoreLink: "/anello",
   },
 ];
 
