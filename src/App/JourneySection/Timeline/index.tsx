@@ -1,18 +1,19 @@
 import { ReactNode } from "react";
-// import { useNavigate } from "react-router";
-import { Briefcase, GraduationCap, MessageCircleMore, PcCase } from "lucide-react";
+import { useNavigate } from "react-router";
+import { Briefcase, GraduationCap, Laptop, Lightbulb, MessageCircleMore } from "lucide-react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
 import { useTheme } from "@/components-shadcn/theme-provider";
-// import { Button } from "@/components-shadcn/button";
+import { Button } from "@/components-shadcn/button";
 import useIsMobileView from "@/hooks/useIsMobileView";
 
 import nasaLogo from "@/assets/nasa.svg";
 import anelloLogo from "@/assets/anello.png";
+import expoLogo from "@/assets/cu_expo.jpg";
+import hackCuLogo from "@/assets/hack_cu_logo.png";
 import ringyLogo from "@/assets/ringy_logo.png";
 import cuBoulderLogo from "@/assets/cu_logo.png";
-import deskign2DeskLogo from "@/assets/design2desk_profile.png";
 
 interface EducationContent {
   name: string;
@@ -55,7 +56,21 @@ const timeLineData: TimeLineElement[] = [
         "During my first internship at NASA, I refactored the NPSS Power System Library, a simulation framework for modeling aircraft propulsion and power systems.",
     } as WorkContent,
     image: nasaLogo,
-    learnMoreLink: "/first-nasa-internship",
+    learnMoreLink: "/nasa-internships",
+  },
+  {
+    id: "engineering-expo",
+    date: "February 2023 - April 2023",
+    icon: <Lightbulb />,
+    type: "project",
+    content: {
+      name: "CU Engineering Expo 2023",
+      role: "Team Lead",
+      description:
+        "Led a team of four to build a 17th-century time escapement for my physics professor’s visual teaching aid.",
+    } as ProjectContent,
+    image: expoLogo,
+    learnMoreLink: "/engineering-expo",
   },
   {
     id: "second-nasa-internship",
@@ -70,7 +85,7 @@ const timeLineData: TimeLineElement[] = [
         "During my second internship at NASA, I developed control software for a prototype Artemis lunar power grid, a system designed to distribute and manage electrical power on the Lunar Gateway and the lunar surface.",
     } as WorkContent,
     image: nasaLogo,
-    learnMoreLink: "/second-nasa-internship",
+    learnMoreLink: "/nasa-internships",
   },
   {
     id: "anello-project",
@@ -81,10 +96,24 @@ const timeLineData: TimeLineElement[] = [
       name: "Anello Chat App",
       role: "Sole Developer",
       description:
-        "I built a full-featured chat app supporting text, voice, and video calls, drawing inspiration from modern VOIP and collaboration tools such as Discord, Slack, and Zoom.",
+        "I built a full-featured chat app supporting text, group text, voice, and video calls, drawing inspiration from modern VOIP and collaboration tools such as Discord, Slack, and Zoom.",
     } as ProjectContent,
     image: anelloLogo,
     learnMoreLink: "/anello",
+  },
+  {
+    id: "hack-cu",
+    date: "March 2024",
+    icon: <Laptop />,
+    type: "project",
+    content: {
+      name: "HackCU 10 Hackathon",
+      role: "Team Member",
+      description:
+        "Our team of three developed a real-time satellite telemetry tracker for the HackCU 10 hackathon event.",
+    } as ProjectContent,
+    image: hackCuLogo,
+    learnMoreLink: "/hack-cu",
   },
   {
     id: "ringy",
@@ -116,25 +145,12 @@ const timeLineData: TimeLineElement[] = [
     image: cuBoulderLogo,
     learnMoreLink: "/cu-boulder",
   },
-  {
-    id: "design-2-desk",
-    date: "August 2025",
-    icon: <PcCase />,
-    type: "project",
-    content: {
-      name: "Design2Desk Website",
-      role: "Sole Developer",
-      description: "I built a website that allows people to customize quality custom computer parts.",
-    } as ProjectContent,
-    image: deskign2DeskLogo,
-    learnMoreLink: "/anello",
-  },
 ];
 
 const TimeLine = () => {
   const { theme } = useTheme();
   const isMobileView = useIsMobileView();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const colorToUse = theme === "dark" ? "white" : "black";
   const inverseColorToUse = theme === "dark" ? "black" : "white";
@@ -168,7 +184,7 @@ const TimeLine = () => {
                   </div>
                 </div>
                 <div className="text-xs sm:text-sm md:text-base">{(entry.content as WorkContent).description}</div>
-                {/* <Button
+                <Button
                   style={{
                     backgroundColor: inverseColorToUse,
                     color: colorToUse,
@@ -177,7 +193,7 @@ const TimeLine = () => {
                   onClick={() => navigate(entry.learnMoreLink)}
                 >
                   Learn More
-                </Button> */}
+                </Button>
               </>
             )}
 
@@ -196,7 +212,7 @@ const TimeLine = () => {
                   </div>
                 </div>
                 <div className="text-xs sm:text-sm md:text-base">{(entry.content as ProjectContent).description}</div>
-                {/* <Button
+                <Button
                   style={{
                     backgroundColor: inverseColorToUse,
                     color: colorToUse,
@@ -205,7 +221,7 @@ const TimeLine = () => {
                   onClick={() => navigate(entry.learnMoreLink)}
                 >
                   Learn More
-                </Button> */}
+                </Button>
               </>
             )}
 
@@ -224,7 +240,7 @@ const TimeLine = () => {
                   </div>
                 </div>
                 <div className="text-xs sm:text-sm md:text-base">{(entry.content as EducationContent).description}</div>
-                {/* <Button
+                <Button
                   style={{
                     backgroundColor: inverseColorToUse,
                     color: colorToUse,
@@ -233,7 +249,7 @@ const TimeLine = () => {
                   onClick={() => navigate(entry.learnMoreLink)}
                 >
                   Learn More
-                </Button> */}
+                </Button>
               </>
             )}
           </div>

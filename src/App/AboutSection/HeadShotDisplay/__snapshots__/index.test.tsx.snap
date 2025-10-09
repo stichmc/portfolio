@@ -17,6 +17,7 @@ exports[`HeadShotDisplay 1`] = `
         </div>
         <div
           class="relative z-10 flex items-center justify-center rounded-full w-full h-full overflow-hidden border-card-foreground border-4"
+          style="transform: translateZ(0);"
         >
           <img
             alt="michael-headshot"
@@ -40,6 +41,7 @@ exports[`HeadShotDisplay 1`] = `
       </div>
       <div
         class="relative z-10 flex items-center justify-center rounded-full w-full h-full overflow-hidden border-card-foreground border-4"
+        style="transform: translateZ(0);"
       >
         <img
           alt="michael-headshot"

@@ -6,7 +6,7 @@ exports[`AboutSection 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center pt-24 sm:pt-0 justify-end sm:justify-center h-[80vh] max-w-[1500px] sm:p-12 p-4"
+        class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center pt-24 sm:pt-0 justify-end sm:justify-center h-[680px] md:h-[700px] max-w-[1500px] sm:p-12 p-4"
       >
         <div
           class="flex flex-col items-center gap-4 justify-center text-center"
@@ -208,6 +208,7 @@ exports[`AboutSection 1`] = `
             </div>
             <div
               class="relative z-10 flex items-center justify-center rounded-full w-full h-full overflow-hidden border-card-foreground border-4"
+              style="transform: translateZ(0);"
             >
               <img
                 alt="michael-headshot"
@@ -222,7 +223,7 @@ exports[`AboutSection 1`] = `
   </body>,
   "container": <div>
     <div
-      class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center pt-24 sm:pt-0 justify-end sm:justify-center h-[80vh] max-w-[1500px] sm:p-12 p-4"
+      class="flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-12 gap-8 xl:gap-24 items-center pt-24 sm:pt-0 justify-end sm:justify-center h-[680px] md:h-[700px] max-w-[1500px] sm:p-12 p-4"
     >
       <div
         class="flex flex-col items-center gap-4 justify-center text-center"
@@ -424,6 +425,7 @@ exports[`AboutSection 1`] = `
           </div>
           <div
             class="relative z-10 flex items-center justify-center rounded-full w-full h-full overflow-hidden border-card-foreground border-4"
+            style="transform: translateZ(0);"
           >
             <img
               alt="michael-headshot"
