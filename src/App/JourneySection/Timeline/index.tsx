@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { useNavigate } from "react-router";
-import { Briefcase, GraduationCap, Laptop, Lightbulb, MessageCircleMore, PcCase } from "lucide-react";
+import { Briefcase, GraduationCap, Laptop, Lightbulb, MessageCircleMore } from "lucide-react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
